@@ -1,0 +1,24 @@
+{
+  "name": "mywebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env DEBUG=true parcel ./src/index.html",
+    "build": "parcel build ./src/index.html --out-dir docs --public-url ./"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "hyperapp": "^2.0.4"
+  },
+  "author": "Jules Fouchy",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.0.13",
+    "cross-env": "^7.0.2",
+    "hyperapp-v2-basiclogger": "^0.3.0",
+    "parcel": "^1.12.4",
+    "sass": "^1.26.8",
+    "typescript": "^3.9.5"
+  }
+}
