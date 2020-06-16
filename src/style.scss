@@ -1,13 +1,15 @@
 $hexWidth: 200px;
-$hexBorderWeight: 3px;
+$hexStrokeHalfWeight: 1.5px;
 
 //
 .hexagon {
-    // Border color
-    background-color: purple;
     // Fill color 
     .innerHexagon {
         background-color: pink;
+    }
+    // Stroke color
+    .outerHexagon {
+        background-color: purple;
     }
     //
     &:hover {
@@ -47,8 +49,6 @@ $hexagonalPath: polygon(
     0%   33.33%  /* left-top  */
 );
 .hexagon {
-    // Big One (for stroke)
-    clip-path: $hexagonalPath;
     width: $hexWidth;
     position: relative;
     &:before {
@@ -56,19 +56,28 @@ $hexagonalPath: polygon(
         content: "";
         width: 100%;
         padding-top: 173.21%;
-        pointer-events: auto;
     }
     .innerHexagon {
         // Small One (for fill)
         clip-path: $hexagonalPath;
         position: absolute;
-        left: $hexBorderWeight;
-        top:  $hexBorderWeight * $sqrt3;
-        width:   $hexWidth - 2 * $hexBorderWeight;
-        height: ($hexWidth - 2 * $hexBorderWeight) * $sqrt3;
+        left: $hexStrokeHalfWeight;
+        top:  $hexStrokeHalfWeight * $sqrt3;
+        width:   $hexWidth - 2 * $hexStrokeHalfWeight;
+        height: ($hexWidth - 2 * $hexStrokeHalfWeight) * $sqrt3;
+    }
+    .outerHexagon {
+        // Big One (for stroke)
+        clip-path: $hexagonalPath;
+        position: absolute;
+        left: - $hexStrokeHalfWeight;
+        top:  - $hexStrokeHalfWeight * $sqrt3;
+        width:   $hexWidth + 2 * $hexStrokeHalfWeight;
+        height: ($hexWidth + 2 * $hexStrokeHalfWeight) * $sqrt3;
+        pointer-events: auto;
     }
 }
 // Fix thoses divs preventing us to properly hover other hexagons
-.hexaContainer, .hexaSet1, .hexaSet2 {
+.hexaContainer, .outerHexagon, .hexagon::before, .hexaSet1, .hexaSet2 {
     pointer-events: none;
 }

@@ -2,9 +2,10 @@ import { h } from 'hyperapp'
 
 const Hexagon = () => 
     h('div', {class: 'hexaContainer'},
-        h('div', {class: 'hexagon'},
+        h('div', {class: 'hexagon'}, [
+            h('span', {class: 'outerHexagon'}),
             h('span', {class: 'innerHexagon'})
-        )
+        ])
     )
 
 export default state =>
