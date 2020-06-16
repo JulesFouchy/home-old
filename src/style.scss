@@ -1,17 +1,29 @@
 $hexWidth: 200px;
-$borderWeight: 3px;
+$hexBorderWeight: 3px;
+
+//
+.hexagon {
+    // Border color
+    background-color: purple;
+    // Fill color 
+    .innerHexagon {
+        background-color: pink;
+    }
+    //
+    &:hover {
+        transform: scale(1.2);
+        z-index: 1;
+    }
+}
+
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ----- Internal shit to draw hexagons ----- */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
 
 $sqrt3: 1.73205;
-$polygonalPath: polygon(
-    50%  16.67%, /* top       */
-    100% 33.33%, /* right-top */
-    100% 66.67%, /* right-bot */
-    50%  83.33%, /* bot       */
-    0%   66.67%, /* left-bot  */
-    0%   33.33%  /* left-top  */
-);
-
-// Position the two sets of hexagons
+// Position the two sets of hexagons for the tiling
 .hexagons {
     position: relative;
 }
@@ -25,44 +37,38 @@ $polygonalPath: polygon(
     left: $hexWidth * 0.5;
     top:  $hexWidth * 0.5 * $sqrt3;
 }
-
-// Fix thoses divs preventing us to properly hover other hexagons
-.hexaContainer, .hexaSet1, .hexaSet2 {
-    pointer-events: none;
-}
-
-//
+// Draw the hexagonal shape
+$hexagonalPath: polygon(
+    50%  16.67%, /* top       */
+    100% 33.33%, /* right-top */
+    100% 66.67%, /* right-bot */
+    50%  83.33%, /* bot       */
+    0%   66.67%, /* left-bot  */
+    0%   33.33%  /* left-top  */
+);
 .hexagon {
-    // Border color
-    background-color: purple;
-    //
-    &:hover {
-        transform: scale(1.2);
-        z-index: 1;
-    }
-
-    clip-path: $polygonalPath;
-
+    // Big One (for stroke)
+    clip-path: $hexagonalPath;
     width: $hexWidth;
     position: relative;
     &:before {
-        pointer-events: auto;
         display: block;
         content: "";
         width: 100%;
         padding-top: 173.21%;
+        pointer-events: auto;
     }
-    
     .innerHexagon {
-        // Fill color
-        background-color: pink;
-        clip-path: $polygonalPath;
-        display: block;
+        // Small One (for fill)
+        clip-path: $hexagonalPath;
         position: absolute;
-        left: $borderWeight;
-        top:  $borderWeight * $sqrt3;
-        width:   $hexWidth - 2 * $borderWeight;
-        height: ($hexWidth - 2 * $borderWeight) * $sqrt3;
+        left: $hexBorderWeight;
+        top:  $hexBorderWeight * $sqrt3;
+        width:   $hexWidth - 2 * $hexBorderWeight;
+        height: ($hexWidth - 2 * $hexBorderWeight) * $sqrt3;
     }
-
+}
+// Fix thoses divs preventing us to properly hover other hexagons
+.hexaContainer, .hexaSet1, .hexaSet2 {
+    pointer-events: none;
 }
