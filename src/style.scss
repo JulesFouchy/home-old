@@ -41,12 +41,17 @@ $polygonClipPath: polygon(
 //     padding: 10px;
 // }
 
+div {
+    pointer-events: none;
+}
+
 .hexagon {
     // mask-image: url(../img/hexagon.svg);
     background-color: purple;
     clip-path: $polygonClipPath;
     &:hover {
         transform: scale(1.2);
+        z-index: 1;
     }
 
     // border: solid black;
@@ -54,6 +59,7 @@ $polygonClipPath: polygon(
     width: 200px;
     position: relative;
     &:before {
+        pointer-events: auto;
         display: block;
         content: "";
         width: 100%;
