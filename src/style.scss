@@ -1,7 +1,7 @@
+// Position the two sets of hexagons
 .hexagons {
     position: relative;
 }
-
 .hexaSet1, .hexaSet2{
     position: absolute;
     display: flex;
@@ -9,52 +9,36 @@
     flex-wrap: wrap;
 }
 .hexaSet2 {
-    // display: none;
     top: 173px;
     left: 100px;
-
-    // .hexagon {
-    //     &:nth-child(3n) {
-    //         background-color: blue;
-    //     }
-    //     &:nth-child(3n+1) {
-    //         background-color: yellow;
-    //     }
-    //     &:nth-child(3n+2) {
-    //         background-color: green;
-    //     }
-    // }
 }
+//
 
 $polygonClipPath: polygon(
-    50% 16.67%, /* top */
+    50%  16.67%, /* top       */
     100% 33.33%, /* right-top */
     100% 66.67%, /* right-bot */
-    50% 83.33%, /* bot */
-    0% 66.67%,/* left-bot */
-    0% 33.33% /* left-top */
+    50%  83.33%, /* bot       */
+    0%   66.67%, /* left-bot  */
+    0%   33.33%  /* left-top  */
 );
 
-// .hexaContainer {
-//     background-color: pink;
-//     clip-path: $polygonClipPath;
-//     padding: 10px;
-// }
-
-div {
+// Fix thoses divs preventing us to properly hover other hexagons
+.hexaContainer, .hexaSet1, .hexaSet2 {
     pointer-events: none;
 }
 
+//
 .hexagon {
-    // mask-image: url(../img/hexagon.svg);
+    // Border color
     background-color: purple;
-    clip-path: $polygonClipPath;
+    //
     &:hover {
         transform: scale(1.2);
         z-index: 1;
     }
 
-    // border: solid black;
+    clip-path: $polygonClipPath;
 
     width: 200px;
     position: relative;
@@ -66,7 +50,9 @@ div {
         padding-top: 173.21%;
     }
     
-    .inner {
+    .innerHexagon {
+        // Fill color
+        background-color: pink;
         clip-path: $polygonClipPath;
         display: block;
         position: absolute;
@@ -74,7 +60,6 @@ div {
         left: 3px;
         width: 194px;
         height: 340px;
-        background-color: pink;
     }
 
 }
