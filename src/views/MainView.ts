@@ -8,51 +8,32 @@ const Hexagon = () =>
         ])
     )
 
+const PairOfHexagons = () => 
+    h('div', {class: 'pairOfHexagons'}, [
+        Hexagon(),
+        Hexagon(),
+    ])
+
 export default state =>
     h('div', {}, [
         'Hello Web',
-        h('div', {class: 'hexagons'}, [
-            h('div', {class: 'hexaSet1'}, [
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-            ]),
-            h('div', {class: 'hexaSet2'}, [
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-                Hexagon(),
-            ])
+        h('div', {class: 'hexaSet1'}, [
+            Hexagon(),
+            Hexagon(),
+            Hexagon(),
+            Hexagon(),
+            Hexagon(),
+            Hexagon(),
+            Hexagon(),
+            Hexagon(),
+            Hexagon(),
+            Hexagon(),
+            Hexagon(),
+            Hexagon(),
+            Hexagon(),
+            Hexagon(),
+            Hexagon(),
+            Hexagon(),
+            Hexagon(),
         ])
     ])
