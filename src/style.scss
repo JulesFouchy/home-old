@@ -3,7 +3,7 @@ $hexStrokeHalfWeight: 1.5px;
 
 //
 .hexagon {
-    // transform: scale(2);
+    transform: scale(2);
     // Fill color 
     .innerHexagon {
         background-color: pink;
@@ -30,27 +30,19 @@ $hexStrokeHalfWeight: 1.5px;
 $sqrt3: 1.73205;
 
 .hexaContainer {
-    // margin-bottom: $hexWidth * $sqrt3;
-    // &:nth-child(2n) {
-    //     transform: translate(0, $hexWidth * $sqrt3);
-    // }
-    // &:nth-child(2n+1) {
+    margin-bottom: $hexWidth * $sqrt3;
+    &:nth-child(2n) {
+        transform: translate(0, $hexWidth * $sqrt3);
+    }
+    &:nth-child(2n+1) {
 
-    // }
+    }
 }
 // Position the two sets of hexagons for the tiling
 .hexaSet1{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 120px);
-    // grid-template-rows: repeat(auto-fill, 120px);
-    grid-row-gap: .5em;
-    grid-column-gap: 1em;
-    // grid-row: span 4;
-    grid-column-start: 3;
-}
-.hexaSet1:nth-col(2n+1) {
-    background-color: red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 // Draw the hexagonal shape
 $hexagonalPath: polygon(
