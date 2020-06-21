@@ -17,7 +17,7 @@ const PairOfHexagons = () =>
 export default state =>
     h('div', {}, [
         'Hello Web',
-        h('div', {class: 'hexaSet1'}, [
+        h('div', {class: 'hexagons'}, [
             PairOfHexagons(),
             PairOfHexagons(),
             PairOfHexagons(),

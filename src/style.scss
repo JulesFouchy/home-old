@@ -1,21 +1,13 @@
 $hexWidth: 100px;
-$hexStrokeHalfWeight: 1.5px;
+$hexStrokeWeight: 3px;
 
 //
 .hexagon {
-    transform: scale(2);
-    // Fill color 
     .innerHexagon {
         background-color: pink;
     }
-    // Stroke color
     .outerHexagon {
         background-color: purple;
-    }
-    //
-    &:hover {
-        // transform: scale(2.5);
-        // z-index: 1;
     }
 }
 
@@ -29,22 +21,20 @@ $hexStrokeHalfWeight: 1.5px;
 
 $sqrt3: 1.73205;
 
-.hexaContainer {
-    margin-bottom: $hexWidth * $sqrt3;
-    &:nth-child(2n+1) {
-        transform: translate(0, $hexWidth * $sqrt3);
-    }
-}
-// Position the two sets of hexagons for the tiling
-.hexaSet1 {
+.hexagons {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
+.hexaContainer {
+    margin-bottom: $hexWidth * 0.5 * $sqrt3;
+    &:nth-child(2n+1) {
+        transform: translate(0, $hexWidth * 0.5 * $sqrt3);
+    }
+}
 .pairOfHexagons {
     display: flex;
     flex-direction: row;
-    // flex-wrap: wrap;
 }
 // Draw the hexagonal shape
 $hexagonalPath: polygon(
@@ -56,7 +46,8 @@ $hexagonalPath: polygon(
     0%   33.33%  /* left-top  */
 );
 .hexagon {
-    width: $hexWidth;
+    transform: scale(2); // Because of this every hexWidth has to be divided by 2
+    width: $hexWidth * 0.5;
     position: relative;
     &:before {
         display: block;
@@ -68,23 +59,23 @@ $hexagonalPath: polygon(
         // Small One (for fill)
         clip-path: $hexagonalPath;
         position: absolute;
-        left: $hexStrokeHalfWeight;
-        top:  $hexStrokeHalfWeight * $sqrt3;
-        width:   $hexWidth - 2 * $hexStrokeHalfWeight;
-        height: ($hexWidth - 2 * $hexStrokeHalfWeight) * $sqrt3;
+        left: $hexStrokeWeight * 0.25;
+        top:  $hexStrokeWeight * 0.25 * $sqrt3;
+        width:   $hexWidth * 0.5 - 2 * $hexStrokeWeight * 0.25;
+        height: ($hexWidth * 0.5 - 2 * $hexStrokeWeight * 0.25) * $sqrt3;
     }
     .outerHexagon {
         // Big One (for stroke)
         clip-path: $hexagonalPath;
         position: absolute;
-        left: - $hexStrokeHalfWeight;
-        top:  - $hexStrokeHalfWeight * $sqrt3;
-        width:   $hexWidth + 2 * $hexStrokeHalfWeight;
-        height: ($hexWidth + 2 * $hexStrokeHalfWeight) * $sqrt3;
+        left: - $hexStrokeWeight * 0.25;
+        top:  - $hexStrokeWeight * 0.25 * $sqrt3;
+        width:   $hexWidth * 0.5 + 2 * $hexStrokeWeight * 0.25;
+        height: ($hexWidth * 0.5 + 2 * $hexStrokeWeight * 0.25) * $sqrt3;
         pointer-events: auto;
     }
 }
 // Fix thoses divs preventing us to properly hover other hexagons
-.hexaContainer, .outerHexagon, .hexagon::before, .hexaSet1, .hexaSet2 {
+.hexaContainer, .outerHexagon, .hexagon::before, .hexagons {
     pointer-events: none;
 }
