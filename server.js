@@ -1,10 +1,17 @@
-const Bundler = require('parcel-bundler')
 const express = require('express')
+const app = express()
+const serv = require('http').Server(app)
+const path = require('path')
 
-let bundler = new Bundler('./src/index.html')
-let app = express()
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*')
+  next()
+})
 
-process.env.ROOT_URL = 'http://localhost:5000/'
+app.use('/', express.static('docs'));
 
-app.use(bundler.middleware())
-app.listen(process.env.PORT || 5000)
+app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'docs/index.html'))
+})
+
+serv.listen(process.env.PORT || 1234, () => console.log('Server started.'))

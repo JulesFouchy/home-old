@@ -8,7 +8,7 @@ var t;!function(e,n){"object"==typeof exports&&"undefined"!=typeof module?module
 },{}],"zgyc":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var r=require("hyperapp"),e=function(e,n){return r.h("div",{class:"hexaContainer"},r.h("div",{class:"hexagon",id:n+e},[r.h("span",{class:"outerHexagon"}),r.h("span",{class:"innerHexagon"})]))},n=function(n,a){return r.h("div",{class:"pairOfHexagons"},[e(2*n,a),e(2*n+1,a)])},a=function(n,a){return r.h("div",{class:"pairOfHexagons"},[e(n,a)])};exports.default=function(e,s){void 0===s&&(s="");var o=Array.from(Array(Math.floor(e/2)),function(r,e){return n(e,s)});return e%2==1&&o.push(a(e-1,s)),r.h("div",{class:"hexagons"},o)};
 },{"hyperapp":"xJOT"}],"sQC8":[function(require,module,exports) {
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("hyperapp");exports.default=function(t,r){return e.h("a",{href:"https://julesfouchy.github.io/MyWebsite/"+t},r||t)};
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("hyperapp");exports.default=function(r,t){return e.h("a",{href:void 0+r},t||r)};
 },{"hyperapp":"xJOT"}],"hPGa":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0}),exports.route=void 0;var t=e(require("../state")),r=require("hyperapp"),o=e(require("../components/InternalLink")),u=require("./HexagonsTestPage"),n={route:"go",onEnter:function(){console.log("root"),r.app({init:t.default,view:function(){return o.default(u.route)},node:document.body})}},i=n.route;exports.route=i,exports.default=n;
 },{"../state":"mIWh","hyperapp":"xJOT","../components/InternalLink":"sQC8","./HexagonsTestPage":"VuVd"}],"nQzH":[function(require,module,exports) {
@@ -20,4 +20,4 @@ var t;!function(e,n){"object"==typeof exports&&"undefined"!=typeof module?module
 },{"../state":"mIWh","../views/mainView":"nQzH","hyperapp":"xJOT"}],"QCba":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var t=e(require("navigo")),r=e(require("./pages/HexagonsTestPage")),o=e(require("./pages/RootPage")),u=e(require("./pages/Root2")),a=[o.default,r.default,u.default],s=new t.default;a.forEach(function(e){s.on(e.route,e.onEnter)}),s.resolve();
 },{"navigo":"vI6X","./pages/HexagonsTestPage":"VuVd","./pages/RootPage":"hPGa","./pages/Root2":"fW53"}]},{},["QCba"], null)
-//# sourceMappingURL=src.9cb58feb.js.map
+//# sourceMappingURL=src.07fb5f94.js.map
