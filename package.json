@@ -10,7 +10,8 @@
     "start": "node server.js",
     "dev": "cross-env DEBUG=true ROOT_URL=http://localhost:1234/ node devServer.js",
     "prebuild": "rmdir docs /s /q",
-    "build": "parcel build ./src/index.html --out-dir docs --public-url ./"
+    "build": "parcel build ./src/index.html --out-dir docs --public-url ./",
+    "heroku-postbuild": ""
   },
   "dependencies": {
     "express": "^4.17.1"
