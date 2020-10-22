@@ -1,35 +1,18 @@
-// import async / await
-import 'core-js/stable'
-import 'regenerator-runtime/runtime'
-//
+import Navigo from 'navigo'
+import { Page } from './types/Page'
 
-import state from './state'
-import mainView from './views/mainView'
+import HexagonsPage from './pages/HexagonsTestPage'
+import RootPage from './pages/RootPage'
+import Root2 from './pages/Root2'
 
-import { app } from 'hyperapp'
-import logger from "hyperapp-v2-basiclogger"
+const pages = [
+    RootPage,
+    HexagonsPage,
+    Root2,
+]
 
-// const tryFind = (identifier) => {
-//     const search = window.location.search
-//     const opt = identifier+'='
-//     let begin = search.indexOf(opt)
-//     if (begin !== -1) begin += opt.length
-//     const end = search.indexOf('&')
-//     return begin === - 1 ? ''
-//                     : end === - 1 ? search.substring(begin)
-//                       : search.substring(begin, end)
-// }
-
-// const cardID = tryFind('cardid')
-// const authorID = tryFind('authorid')
-
-// window.history.pushState(partsOfStateToSaveInHistory(state), '')
-
-app(
-    { 
-        init: state,
-        view: mainView,
-        node: document.body,
-        middleware: process.env.DEBUG==='true' && logger,
-    }
-)
+const router = new Navigo()
+pages.forEach(page => {
+    router.on(page.route, page.onEnter)
+})
+router.resolve()

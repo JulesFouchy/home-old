@@ -4,17 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env DEBUG=true parcel ./src/index.html",
+    "dev": "cross-env DEBUG=true ROOT_ULR=http://localhost:1234/ parcel ./src/index.html",
     "prebuild": "rmdir docs /s /q",
-    "build": "parcel build ./src/index.html --out-dir docs --public-url ./"
+    "build": "cross-env ROOT_ULR=https://julesfouchy.github.io/MyWebsite/ parcel build ./src/index.html --out-dir docs --public-url ./"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "hyperapp": "^2.0.4"
+    "hyperapp": "^2.0.4",
+    "navigo": "^7.1.2"
   },
   "author": "Jules Fouchy",
   "license": "ISC",
   "devDependencies": {
+    "@types/navigo": "^7.0.1",
     "@types/node": "^14.0.13",
     "cross-env": "^7.0.2",
     "hyperapp-v2-basiclogger": "^0.3.0",
