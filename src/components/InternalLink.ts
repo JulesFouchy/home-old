@@ -1,4 +1,4 @@
 import { h } from 'hyperapp'
 
 export default (pageName: string, linkName?: string) =>
-    h('a', {href: 'http://localhost:1234/' + pageName}, linkName || pageName)
+    h('a', {href: process.env.ROOT_URL + pageName}, linkName || pageName)

@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env DEBUG=true ROOT_ULR=http://localhost:1234/ parcel ./src/index.html",
+    "dev": "cross-env DEBUG=true ROOT_URL=http://localhost:1234/ parcel ./src/index.html",
     "prebuild": "rmdir docs /s /q",
-    "build": "cross-env ROOT_ULR=https://julesfouchy.github.io/MyWebsite/ parcel build ./src/index.html --out-dir docs --public-url ./"
+    "build": "cross-env ROOT_URL=https://julesfouchy.github.io/MyWebsite/ parcel build ./src/index.html --out-dir docs --public-url ./"
   },
   "dependencies": {
     "core-js": "^3.6.5",
