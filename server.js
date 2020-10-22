@@ -9,6 +9,7 @@ app.use((req, res, next) => {
 })
 
 app.use('/', express.static('docs'));
+app.use('/experimental/', express.static('docs'));
 
 app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, 'docs/index.html'))
