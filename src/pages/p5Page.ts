@@ -20,5 +20,5 @@ const page: Page = {
 
 // Exports
 const route = page.route
-export default page
-export { route }
+export default route
+export { page }

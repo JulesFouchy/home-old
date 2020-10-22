@@ -2,9 +2,9 @@ import { Page } from '../types/Page'
 import InternalLink from '../components/InternalLink'
 import { app, h } from 'hyperapp'
 // Import routes
-import { route as experimental } from './Experimental'
-import { route as hexaRoute } from './HexagonsTestPage'
-import { route as p5Tutorials } from './p5Page'
+import experimental from './Experimental'
+import hexaRoute from './HexagonsTestPage'
+import p5Tutorials from './p5Page'
 
 const view = () =>
     h('div', {}, [
@@ -28,5 +28,5 @@ const page: Page = {
 
 // Exports
 const route = page.route
-export default page
-export { route }
+export default route
+export { page }

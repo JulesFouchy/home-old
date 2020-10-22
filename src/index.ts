@@ -1,9 +1,9 @@
 import Navigo from 'navigo'
 
-import RootPage from './pages/RootPage'
-import HexagonsPage from './pages/HexagonsTestPage'
-import Experimental from './pages/Experimental'
-import p5 from './pages/p5Page'
+import { page as RootPage } from './pages/RootPage'
+import { page as HexagonsPage } from './pages/HexagonsTestPage'
+import { page as Experimental } from './pages/Experimental'
+import { page as p5 } from './pages/p5Page'
 
 const pages = [
     p5,

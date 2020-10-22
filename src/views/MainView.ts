@@ -2,7 +2,7 @@ import { h } from 'hyperapp'
 import type { State } from '../state'
 import Hexagons from '../components/Hexagons'
 import InternalLink from '../components/InternalLink'
-import { route as rootRoute } from '../pages/RootPage'
+import rootRoute from '../pages/RootPage'
 
 export default (state: State) =>
     h('div', {}, [
