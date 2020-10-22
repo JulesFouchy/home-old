@@ -1,24 +1,48 @@
 import { Page } from '../types/Page'
+import { app, h } from 'hyperapp'
+import InternalLink from '../components/InternalLink'
+import Hexagons from '../components/Hexagons'
+import rootRoute from '../pages/RootPage'
 
-import state from '../state'
-import mainView from '../views/mainView'
+interface State {
+    nbHexas: number,
+}
 
-import { app } from 'hyperapp'
+const state: State = {
+    nbHexas: 10,
+}
+
+const view = (state) =>
+    h('div', {}, [
+        'Hello Web',
+        h('button', {
+            onclick: (state: State) => ({
+                ...state,
+                nbHexas: state.nbHexas - 1,
+            })
+        }, '-'),
+        h('button', {
+            onclick: (state: State) => ({
+                ...state,
+                nbHexas: state.nbHexas + 1,
+            })
+        }, '+'),
+        Hexagons(state.nbHexas, 'jules'),
+        InternalLink(rootRoute, 'Retour à la maison')
+    ])
 
 const page: Page = {
     route: 'experimental/hexagons',
     onEnter: () => {
-        console.log("hexa")
         app(
             { 
                 init: state,
-                view: mainView,
+                view: view,
                 node: document.body,
             }
         )
     }
 }
-
 // Exports
 const route = page.route
 export default route
