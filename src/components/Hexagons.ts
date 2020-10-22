@@ -1,27 +1,27 @@
 import { h } from 'hyperapp'
 
-const Hexagon = () => 
+const Hexagon = (i, id) => 
     h('div', {class: 'hexaContainer'},
-        h('div', {class: 'hexagon'}, [
+        h('div', {class: 'hexagon', id: id+i}, [
             h('span', {class: 'outerHexagon'}),
             h('span', {class: 'innerHexagon'})
         ])
     )
 
-const PairOfHexagons = () => 
+const PairOfHexagons = (i, id) => 
     h('div', {class: 'pairOfHexagons'}, [
-        Hexagon(),
-        Hexagon(),
+        Hexagon(2*i,   id),
+        Hexagon(2*i+1, id),
     ])
 
-const FakePairOfHexagons = () => 
+const FakePairOfHexagons = (i, id) => 
 h('div', {class: 'pairOfHexagons'}, [
-    Hexagon(),
+    Hexagon(i, id),
 ])
 
-export default (N: number) => {
-    const pairs = Array.from(Array(Math.floor(N/2)), (_, i) => PairOfHexagons())
+export default (N: number, id: String = '') => {
+    const pairs = Array.from(Array(Math.floor(N/2)), (_, i) => PairOfHexagons(i, id))
     if (N % 2 === 1)
-        pairs.push(FakePairOfHexagons())
+        pairs.push(FakePairOfHexagons(N-1, id))
     return h('div', {class: 'hexagons'}, pairs)
 }

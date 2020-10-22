@@ -17,5 +17,5 @@ export default (state: State) =>
                 nbHexas: state.nbHexas - 1,
             })
         }, '-'),
-        Hexagons(state.nbHexas)
+        Hexagons(state.nbHexas, 'jules')
     ])
