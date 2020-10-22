@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "12.16.0"
+  },
   "scripts": {
     "start": "node server.js",
     "dev": "cross-env DEBUG=true ROOT_URL=http://localhost:1234/ parcel ./src/index.html node server.js",
