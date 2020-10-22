@@ -3,13 +3,15 @@ import { Page } from './types/Page'
 
 import HexagonsPage from './pages/HexagonsTestPage'
 import RootPage from './pages/RootPage'
-import Root2 from './pages/Root2'
+import Experimental from './pages/Experimental'
 
 const pages = [
-    RootPage,
+    Experimental,
     HexagonsPage,
-    Root2,
+    RootPage, // Must be declared last, otherwise all routes fall back to this one
 ]
+
+console.log(Experimental)
 
 const router = new Navigo()
 pages.forEach(page => {

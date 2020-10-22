@@ -9,7 +9,7 @@ import InternalLink from '../components/InternalLink'
 import { route as hexaRoute } from './HexagonsTestPage'
 
 const page: Page = {
-    route: 'go',
+    route: '',
     onEnter: () => {
         console.log("root")
         app(

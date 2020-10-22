@@ -3,17 +3,21 @@ import { Page } from '../types/Page'
 
 import state from '../state'
 import mainView from '../views/mainView'
+import InternalLink from '../components/InternalLink'
+import { route as hexaRoute } from './HexagonsTestPage'
 
-import { app } from 'hyperapp'
+import { app, h } from 'hyperapp'
 
 const page: Page = {
-    route: '',
+    route: 'experimental',
     onEnter: () => {
-        console.log("root2")
         app(
             { 
                 init: state,
-                view: mainView,
+                view: () => h('div', {}, [
+                    h('p', {}, 'CECI ES un TeST'),
+                    InternalLink(hexaRoute),
+                ]),
                 node: document.body,
             }
         )

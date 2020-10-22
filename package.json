@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "dev": "cross-env DEBUG=true ROOT_URL=http://localhost:1234/ node devServer.js",
+    "dev": "cross-env DEBUG=true node devServer.js",
     "prebuild": "rmdir docs /s /q",
     "build": "parcel build ./src/index.html --out-dir docs --public-url ./",
     "heroku-postbuild": ""
