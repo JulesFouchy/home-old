@@ -4,14 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env DEBUG=true ROOT_URL=http://localhost:1234/ parcel ./src/index.html",
+    "start": "node server.js",
+    "dev": "cross-env DEBUG=true ROOT_URL=http://localhost:1234/ parcel ./src/index.html node server.js",
     "prebuild": "rmdir docs /s /q",
     "build": "cross-env ROOT_URL=https://julesfouchy.github.io/MyWebsite/ parcel build ./src/index.html --out-dir docs --public-url ./"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "express": "^4.17.1",
     "hyperapp": "^2.0.4",
-    "navigo": "^7.1.2"
+    "navigo": "^7.1.2",
+    "parcel-bundler": "^1.12.4"
   },
   "author": "Jules Fouchy",
   "license": "ISC",
