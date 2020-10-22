@@ -1,28 +1,26 @@
 import { Page } from '../types/Page'
+import { h } from 'hyperapp'
 import InternalLink from '../components/InternalLink'
-import { app, h } from 'hyperapp'
-// Import routes
+// Links
 import hexaRoute from './HexagonsTestPage'
+//
+
+const route = 'experimental'
+
+const state = {}
 
 const view = () =>
     h('div', {}, [
         InternalLink(hexaRoute),
     ])
 
-const page: Page = {
-    route: 'experimental',
-    onEnter: () => {
-        app(
-            { 
-                init: {},
-                view: view,
-                node: document.body,
-            }
-        )
-    }
-}
 
-// Exports
-const route = page.route
+// -------------
+// -- Exports --
+const page: Page = {
+    route,
+    state,
+    view,
+}
 export default route
 export { page }

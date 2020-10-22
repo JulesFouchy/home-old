@@ -1,24 +1,20 @@
 import { Page } from '../types/Page'
-import InternalLink from '../components/InternalLink'
-import { app, h } from 'hyperapp'
+import { h } from 'hyperapp'
+
+const route = 'p5'
+
+const state = {}
 
 const view = () =>
     h('p', {}, 'I love p5')
 
-const page: Page = {
-    route: 'p5',
-    onEnter: () => {
-        app(
-            { 
-                init: {},
-                view: view,
-                node: document.body,
-            }
-        )
-    }
-}
 
-// Exports
-const route = page.route
+// -------------
+// -- Exports --
+const page: Page = {
+    route,
+    state,
+    view,
+}
 export default route
 export { page }

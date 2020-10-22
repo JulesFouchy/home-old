@@ -1,10 +1,15 @@
 import { Page } from '../types/Page'
+import { h } from 'hyperapp'
 import InternalLink from '../components/InternalLink'
-import { app, h } from 'hyperapp'
-// Import routes
+// Links
 import experimental from './Experimental'
 import hexaRoute from './HexagonsTestPage'
 import p5Tutorials from './p5Page'
+//
+
+const route = ''
+
+const state = {}
 
 const view = () =>
     h('div', {}, [
@@ -13,20 +18,13 @@ const view = () =>
         h('p', {}, InternalLink(p5Tutorials)),
     ])
 
-const page: Page = {
-    route: '',
-    onEnter: () => {
-        app(
-            { 
-                init: {},
-                view: view,
-                node: document.body,
-            }
-        )
-    }
-}
 
-// Exports
-const route = page.route
+// -------------
+// -- Exports --
+const page: Page = {
+    route,
+    state,
+    view,
+}
 export default route
 export { page }

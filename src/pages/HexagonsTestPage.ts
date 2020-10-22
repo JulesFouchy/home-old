@@ -1,8 +1,12 @@
 import { Page } from '../types/Page'
-import { app, h } from 'hyperapp'
+import { h } from 'hyperapp'
 import InternalLink from '../components/InternalLink'
+// Links
 import Hexagons from '../components/Hexagons'
 import rootRoute from '../pages/RootPage'
+//
+
+const route = 'experimental/hexagons'
 
 interface State {
     nbHexas: number,
@@ -31,19 +35,13 @@ const view = (state) =>
         InternalLink(rootRoute, 'Retour à la maison')
     ])
 
+
+// -------------
+// -- Exports --
 const page: Page = {
-    route: 'experimental/hexagons',
-    onEnter: () => {
-        app(
-            { 
-                init: state,
-                view: view,
-                node: document.body,
-            }
-        )
-    }
+    route,
+    state,
+    view,
 }
-// Exports
-const route = page.route
 export default route
 export { page }

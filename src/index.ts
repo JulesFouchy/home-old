@@ -1,8 +1,9 @@
 import Navigo from 'navigo'
+import { app } from 'hyperapp'
 
 import { page as RootPage } from './pages/RootPage'
-import { page as HexagonsPage } from './pages/HexagonsTestPage'
 import { page as Experimental } from './pages/Experimental'
+import { page as HexagonsPage } from './pages/HexagonsTestPage'
 import { page as p5 } from './pages/p5Page'
 
 const pages = [
@@ -14,6 +15,12 @@ const pages = [
 
 const router = new Navigo()
 pages.forEach(page => {
-    router.on(page.route, page.onEnter)
+    router.on(page.route, () => {
+        app({
+            init: page.state,
+            view: page.view,
+            node: document.body,
+        })
+    })
 })
 router.resolve()
