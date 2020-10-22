@@ -1,20 +1,12 @@
 import { Page } from '../types/Page'
 import InternalLink from '../components/InternalLink'
 import { app, h } from 'hyperapp'
-// Import routes
-import { route as experimental } from './Experimental'
-import { route as hexaRoute } from './HexagonsTestPage'
-import { route as p5Tutorials } from './p5Page'
 
 const view = () =>
-    h('div', {}, [
-        h('p', {}, InternalLink(experimental)),
-        h('p', {}, InternalLink(hexaRoute)),
-        h('p', {}, InternalLink(p5Tutorials)),
-    ])
+    h('p', {}, 'I love p5')
 
 const page: Page = {
-    route: '',
+    route: 'p5',
     onEnter: () => {
         app(
             { 

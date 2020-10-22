@@ -1,6 +1,5 @@
 import { Page } from '../types/Page'
 
-
 import state from '../state'
 import mainView from '../views/mainView'
 
