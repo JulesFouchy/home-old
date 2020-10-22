@@ -3,8 +3,8 @@ import { h } from 'hyperapp'
 import InternalLink from '../components/InternalLink'
 // Links
 import experimental from './Experimental'
-import hexaRoute from './HexagonsTestPage'
-import p5Tutorials from './p5Page'
+import hexaRoute from './Hexagons'
+import p5Tutorials from './p5'
 //
 
 const route = ''

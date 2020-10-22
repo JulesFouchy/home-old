@@ -1,16 +1,16 @@
 import Navigo from 'navigo'
 import { app } from 'hyperapp'
-
-import { page as RootPage } from './pages/RootPage'
+// Pages
+import { page as Root } from './pages/Root'
 import { page as Experimental } from './pages/Experimental'
-import { page as HexagonsPage } from './pages/HexagonsTestPage'
-import { page as p5 } from './pages/p5Page'
+import { page as Hexagons } from './pages/Hexagons'
+import { page as p5 } from './pages/p5'
 
 const pages = [
     p5,
     Experimental,
-    HexagonsPage,
-    RootPage, // Must be declared last, otherwise all routes fall back to this one
+    Hexagons,
+    Root, // Must be declared last, otherwise all routes fall back to this one
 ]
 
 const router = new Navigo()

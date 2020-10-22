@@ -3,7 +3,7 @@ import { h } from 'hyperapp'
 import InternalLink from '../components/InternalLink'
 // Links
 import Hexagons from '../components/Hexagons'
-import rootRoute from '../pages/RootPage'
+import rootRoute from './Root'
 //
 
 const route = 'experimental/hexagons'
