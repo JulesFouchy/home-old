@@ -1,6 +1,18 @@
 $hexWidth: 100px;
 $hexStrokeWeight: 3px;
 
+html {
+    background: rgb(37, 37, 37);
+    color: white;
+}
+
+.table-of-contents {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    width: fit-content; // TODO doesn't work on Firefox
+}
+
 //
 .hexagon {
     .innerHexagon {
