@@ -1,12 +1,17 @@
 import { Page } from '../../../types/Page'
 import { h } from 'hyperapp'
-
-const route = 'p5-introductory-class'
+import Toc from '../../../components/TableOfContents'
+import toc from './toc'
+import route from './route'
 
 const state = {}
 
 const view = () =>
-    h('p', {}, 'I love p5')
+    h('div', {}, 
+    [
+        h('p', {}, 'I love p5'),
+        Toc(toc),
+    ])
 
 
 // -------------
