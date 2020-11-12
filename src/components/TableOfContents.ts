@@ -1,5 +1,5 @@
 import { h } from 'hyperapp'
-import InternalLink from './InternalLink'
+import Link from './Link'
 
 export default (routes: string[]) => {
     return h(
@@ -7,5 +7,5 @@ export default (routes: string[]) => {
     {
         class: 'table-of-contents'
     },
-        routes.map(route => InternalLink(route)))
+        routes.map(route => Link(route)))
 }
