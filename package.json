@@ -9,26 +9,18 @@
     "node": "12.16.0"
   },
   "scripts": {
-    "start": "node server.js",
-    "dev": "cross-env DEBUG=true node devServer.js",
+    "dev": "cross-env DEBUG=true parcel ./src/html/*",
     "prebuild": "rmdir docs /s /q",
-    "build": "parcel build ./src/index.html --out-dir docs --public-url ./",
-    "heroku-postbuild": ""
-  },
-  "dependencies": {
-    "express": "^4.17.1"
+    "build": "parcel build ./src/html/* --out-dir docs --public-url ./"
   },
   "devDependencies": {
-    "core-js": "^3.6.5",
-    "hyperapp": "^2.0.4",
-    "navigo": "^7.1.2",
-    "@types/navigo": "^7.0.1",
     "@types/node": "^14.0.13",
+    "core-js": "^3.6.5",
     "cross-env": "^7.0.2",
-    "hyperapp-v2-basiclogger": "^0.3.0",
+    "hyperapp": "^2.0.4",
     "parcel": "^1.12.4",
+    "parcel-bundler": "^1.12.4",
     "sass": "^1.26.8",
-    "typescript": "^3.9.5",
-    "parcel-bundler": "^1.12.4"
+    "typescript": "^3.9.5"
   }
 }
