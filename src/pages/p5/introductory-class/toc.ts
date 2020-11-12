@@ -1,5 +1,5 @@
-import chapter0 from './0-GettingStarted'
-import chapter1 from './1-SetupAndDraw'
+import chapter0 from './0-getting-started/ref'
+import chapter1 from './1-setup-and-draw/ref'
 
 export default [
     chapter0,

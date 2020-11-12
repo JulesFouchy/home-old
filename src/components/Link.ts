@@ -1,5 +1,5 @@
 import { h } from 'hyperapp'
 
-export default (pageName: string, linkName?: string) => {
-    return h('a', {href: pageName}, linkName || pageName)
+export default (pageName: string, child?: any) => {
+    return h('a', {href: pageName}, child || pageName)
 }

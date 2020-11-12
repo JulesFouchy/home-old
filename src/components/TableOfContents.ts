@@ -1,11 +1,12 @@
 import { h } from 'hyperapp'
+import { PageRef } from '../types/PageRef'
 import Link from './Link'
 
-export default (routes: string[]) => {
+export default (pages: PageRef[]) => {
     return h(
         'div', 
     {
         class: 'table-of-contents'
     },
-        routes.map(route => Link(route)))
+    pages.map(page => Link(page.url, page.name)))
 }
