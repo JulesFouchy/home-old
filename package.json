@@ -1,13 +1,9 @@
 {
-  "name": "mywebsite",
+  "name": "home",
   "version": "1.0.0",
   "description": "",
   "author": "Jules Fouchy",
   "license": "ISC",
-  "main": "index.js",
-  "engines": {
-    "node": "12.16.0"
-  },
   "scripts": {
     "dev": "cross-env DEBUG=true parcel ./src/html/*",
     "prebuild": "rmdir docs /s /q",
