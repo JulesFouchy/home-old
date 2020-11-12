@@ -1,6 +1,6 @@
 import { h, app } from 'hyperapp'
 import Hexagons from './Hexagons'
-//
+import PageView from '../../components/PageView'
 
 interface State {
     nbHexas: number,
@@ -28,9 +28,10 @@ const view = (state: State) =>
         Hexagons(state.nbHexas, 'jules'),
     ])
 
-
 app({
     init: state,
-    view: view,
+    view: PageView({
+        view,
+    }),
     node: document.body,
 })

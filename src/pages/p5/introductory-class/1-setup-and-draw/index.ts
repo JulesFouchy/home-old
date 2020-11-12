@@ -1,16 +1,15 @@
 import { h, app } from 'hyperapp'
-import p5Toc from '../toc'
-import Toc from '../../../../components/TableOfContents'
+import toc from '../toc'
+import PageView from '../../../../components/PageView'
 
 const view = () =>
-    h('div', {}, 
-    [
-        h('p', {}, '1 I love p5'),
-        Toc(p5Toc)
-    ])
+    h('p', {}, '1 I love p5')
 
 app({
     init: {},
-    view: view,
+    view: PageView({
+        view,
+        toc,
+    }),
     node: document.body,
 })
