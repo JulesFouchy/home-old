@@ -1,7 +1,7 @@
-import { Page } from '../types/Page'
+import { Page } from '../../../types/Page'
 import { h } from 'hyperapp'
 
-const route = 'p5'
+const route = 'p5-introductory-class'
 
 const state = {}
 

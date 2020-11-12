@@ -4,10 +4,10 @@ import { app } from 'hyperapp'
 import { page as Root } from './pages/Root'
 import { page as Experimental } from './pages/Experimental'
 import { page as Hexagons } from './pages/Hexagons'
-import { page as p5 } from './pages/p5'
+import { page as p5Intro } from './pages/p5/introductory-class/index'
 
 const pages = [
-    p5,
+    p5Intro,
     Experimental,
     Hexagons,
     Root, // Must be declared last, otherwise all routes fall back to this one

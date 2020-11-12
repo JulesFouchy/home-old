@@ -4,7 +4,7 @@ import InternalLink from '../components/InternalLink'
 // Links
 import experimental from './Experimental'
 import hexaRoute from './Hexagons'
-import p5Tutorials from './p5'
+import p5Tutorials from './p5/introductory-class/index'
 //
 
 const route = ''
