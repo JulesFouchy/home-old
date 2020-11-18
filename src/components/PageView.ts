@@ -1,6 +1,8 @@
 import { h } from 'hyperapp'
 import { Page } from '../types/Page'
 import PageGroup from './PageGroup'
+import Link from './Link'
+import IndexRef from '../pages/index/ref'
 
 export default (page: Page) => {
     return (state: any) => h(
@@ -15,7 +17,7 @@ export default (page: Page) => {
                 class: 'column-1'
             },
             [
-                h('a', {href: '/index.html'}, 'Home'),
+                Link(IndexRef),
                 page.info.group && PageGroup(page.info.group),
             ]
             ),
