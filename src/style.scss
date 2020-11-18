@@ -35,7 +35,7 @@ a {
 .code {
     font-style: italic;
     &.inline {
-        
+
     }
 }
 
@@ -45,4 +45,8 @@ a {
 
 .highlight {
     background-color: gray;
+}
+
+.anecdote {
+    border: gray solid 1px;
 }
