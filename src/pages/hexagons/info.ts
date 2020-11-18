@@ -2,7 +2,7 @@ import { PageInfo } from '../../types/PageInfo'
 
 const info: PageInfo = {
     ref: {
-        url: 'hexagons.html',
+        url: './hexagons.html',
         name: 'Hexagons Experiment'
     }
 }
