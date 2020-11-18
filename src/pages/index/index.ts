@@ -3,6 +3,7 @@ import Link from '../../components/Link'
 import GroupLink from '../../components/GroupLink'
 //
 import group_p5Intro from '../p5/introductory-class/group'
+import page_hexagons from '../hexagons/info'
 
 const view = () =>
     h(
@@ -12,7 +13,7 @@ const view = () =>
     }, 
     [
         'Hello Web',
-        Link('hexagons.html'),
+        Link(page_hexagons.ref),
         GroupLink(group_p5Intro),
     ])
 

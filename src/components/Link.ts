@@ -1,5 +1,6 @@
 import { h } from 'hyperapp'
+import { PageRef } from '../types/PageRef'
 
-export default (pageName: string, child?: any) => {
-    return h('a', {href: pageName}, child || pageName)
+export default (ref: PageRef, child?: any) => {
+    return h('a', {href: ref.url}, child || ref.name)
 }
