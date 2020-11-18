@@ -18,7 +18,7 @@ export default (page: Page) => {
             },
             [
                 Link(IndexRef),
-                page.info.group && PageGroup(page.info.group),
+                page.info.group && PageGroup(page.info),
             ]
             ),
             h(

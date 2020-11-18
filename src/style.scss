@@ -21,6 +21,10 @@ html {
         color: $bgColor;
         background: white;
     }
+    &.selected {
+        color: $bgColor;
+        background: white;
+    }
     padding: 5px;
 }
 

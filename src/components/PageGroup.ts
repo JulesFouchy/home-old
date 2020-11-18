@@ -1,16 +1,16 @@
 import { h } from 'hyperapp'
-import { PageGroup } from '../types/PageGroup'
+import { PageInfo } from '../types/PageInfo'
 import TableOfContents from './TableOfContents'
 
-export default (group: PageGroup) => {
+export default (info: PageInfo) => {
     return h(
         'div',
     {
         class: 'page-group'
     },
     [
-        group.name,
-        TableOfContents(group.pages),
+        info.group.name,
+        TableOfContents(info.group.pages, info.ref.name),
     ]
     )
 }

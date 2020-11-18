@@ -2,7 +2,7 @@ import { h } from 'hyperapp'
 import { PageRef } from '../types/PageRef'
 import Link from './Link'
 
-export default (pages: PageRef[]) => {
+export default (pages: PageRef[], currPageName: string) => {
     return h(
         'div', 
     {
@@ -13,7 +13,7 @@ export default (pages: PageRef[]) => {
             [
                 h('div',
                 {
-                    class: 'toc-element'
+                    class: 'toc-element' + (currPageName === page.name ? ' selected' : '')
                 },[
                     page.name || page.url
                 ])
