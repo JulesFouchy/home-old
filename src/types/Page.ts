@@ -1,6 +1,6 @@
-import { PageRef } from './PageRef'
+import { PageInfo } from './PageInfo'
 
 export interface Page {
     view: any,
-    toc?: PageRef[]
+    info: PageInfo
 }

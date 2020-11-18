@@ -1,5 +1,5 @@
 import { h, app } from 'hyperapp'
-import toc from '../toc'
+import info from './info'
 import PageView from '../../../../components/PageView'
 import Anecdote from '../../../../components/Anecdote'
 
@@ -21,7 +21,7 @@ app({
     init: {},
     view: PageView({
         view,
-        toc,
+        info,
     }),
     node: document.body,
 })

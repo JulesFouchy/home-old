@@ -1,6 +1,5 @@
 import { h } from 'hyperapp'
 import { PageRef } from '../types/PageRef'
-import Link from './Link'
 
 export default (pages: PageRef[]) => {
     return h(

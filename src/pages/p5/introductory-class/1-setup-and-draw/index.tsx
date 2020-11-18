@@ -1,5 +1,5 @@
 import { app, h } from 'hyperapp'
-import toc from '../toc'
+import info from './info'
 import PageView from '../../../../components/PageView'
 import InlineCode from '../../../../components/InlineCode'
 import LineJump from '../../../../components/LineJump'
@@ -29,7 +29,7 @@ app({
     init: {},
     view: PageView({
         view: view,
-        toc,
+        info,
     }),
     node: document.body,
 })
