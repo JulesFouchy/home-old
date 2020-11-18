@@ -1,8 +1,7 @@
-$hexWidth: 100px;
-$hexStrokeWeight: 3px;
+$bgColor: rgb(37, 37, 37);
 
 html {
-    background: rgb(37, 37, 37);
+    background: $bgColor;
     color: white;
 }
 
@@ -10,5 +9,22 @@ html {
     border: 2px solid black;
     display: flex;
     flex-direction: column;
-    width: fit-content; // TODO doesn't work on Firefox
+    width: 150px;
+}
+
+.toc-element {
+    color: white;
+    &:hover {
+        color: $bgColor;
+        background: white;
+    }
+    padding: 5px;
+}
+
+a {
+    color: rgb(77, 103, 255);
+    &:visited {
+        color: rgb(116, 77, 255);
+    }
+    text-decoration: none;
 }

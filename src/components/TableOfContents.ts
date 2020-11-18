@@ -8,5 +8,19 @@ export default (pages: PageRef[]) => {
     {
         class: 'table-of-contents'
     },
-    pages.map(page => Link(page.url, page.name)))
+    pages.map(page => 
+        h('a',
+        {
+            href: page.url,   
+        },
+        [
+            h('div',
+            {
+                class: 'toc-element'
+            },[
+                page.name || page.url
+            ])
+        ])
+    )
+    )
 }
