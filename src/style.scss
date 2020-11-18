@@ -32,6 +32,17 @@ a {
     text-decoration: none;
 }
 
-.code-inline {
+.code {
     font-style: italic;
+    &.inline {
+        
+    }
+}
+
+.line-jump {
+    margin: 15px;
+}
+
+.highlight {
+    background-color: gray;
 }
