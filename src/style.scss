@@ -50,3 +50,15 @@ a {
 .anecdote {
     border: gray solid 1px;
 }
+
+$page-elems-margin: 25px;
+.page-layout {
+    display: flex;
+    .column-1 {
+        margin: $page-elems-margin;
+    }
+    .column-2 {
+        margin: $page-elems-margin;
+        margin-left: 0;
+    }
+}

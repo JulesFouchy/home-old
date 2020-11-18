@@ -4,11 +4,30 @@ import PageGroup from './PageGroup'
 
 export default (page: Page) => {
     return (state: any) => h(
-        'div', {},
+            'div', 
+        {
+            class: 'page-layout'
+        },
         [
-            h('a', {href: '/index.html'}, 'Home'),
-            page.info.group && PageGroup(page.info.group),
-            page.view(state),
+            h(
+                'div',
+            {
+                class: 'column-1'
+            },
+            [
+                h('a', {href: '/index.html'}, 'Home'),
+                page.info.group && PageGroup(page.info.group),
+            ]
+            ),
+            h(
+                'div',
+            {
+                class: 'column-2'
+            },
+            [
+                page.view(state),
+            ]
+            ),
         ]
     )
 }
