@@ -13,14 +13,16 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"../group":"s7Kc","./ref":"OR0o"}],"NZWM":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("hyperapp");exports.default=function(r,t){return e.h("a",{href:r.url},t||r.name)};
 },{"hyperapp":"aft2"}],"uFIY":[function(require,module,exports) {
-"use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var t=require("hyperapp"),r=e(require("./Link"));exports.default=function(e){return t.h("div",{class:"table-of-contents"},e.map(function(e){return r.default(e,[t.h("div",{class:"toc-element"},[e.name||e.url])])}))};
+"use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var t=require("hyperapp"),r=e(require("./Link"));exports.default=function(e,u){return t.h("div",{class:"table-of-contents"},e.map(function(e){return r.default(e,[t.h("div",{class:"toc-element"+(u===e.name?" selected":"")},[e.name||e.url])])}))};
 },{"hyperapp":"aft2","./Link":"NZWM"}],"g3vG":[function(require,module,exports) {
-"use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var t=require("hyperapp"),r=e(require("./TableOfContents"));exports.default=function(e){return t.h("div",{class:"page-group"},[e.name,r.default(e.pages)])};
+"use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=require("hyperapp"),t=e(require("./TableOfContents"));exports.default=function(e){return e.group&&r.h("div",{class:"page-group"},[e.group.name,t.default(e.group.pages,e.ref.name)])};
 },{"hyperapp":"aft2","./TableOfContents":"uFIY"}],"uBlh":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e={url:"./index.html",name:"Home"};exports.default=e;
-},{}],"q5wr":[function(require,module,exports) {
-"use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=require("hyperapp"),u=e(require("./PageGroup")),t=e(require("./Link")),i=e(require("../pages/index/ref"));exports.default=function(e){return function(a){return r.h("div",{class:"page-layout"},[r.h("div",{class:"column-1"},[t.default(i.default),e.info.group&&u.default(e.info.group)]),r.h("div",{class:"column-2"},[e.view(a)])])}};
-},{"hyperapp":"aft2","./PageGroup":"g3vG","./Link":"NZWM","../pages/index/ref":"uBlh"}],"nkpN":[function(require,module,exports) {
+},{}],"Qn4B":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("hyperapp");exports.default=function(r){var a;if(r.group)return r.group.pages.forEach(function(e,p){e.name===r.ref.name&&(a=r.group.pages[p+1])}),a&&e.h("div",{class:"next-page-in-group"},["Next : ",e.h("a",{href:a.url},a.name)])};
+},{"hyperapp":"aft2"}],"q5wr":[function(require,module,exports) {
+"use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=require("hyperapp"),u=e(require("./PageGroup")),t=e(require("./Link")),i=e(require("../pages/index/ref")),a=e(require("./NextPageInGroup"));exports.default=function(e){return function(n){return r.h("div",{class:"page-layout"},[r.h("div",{class:"column-1"},[t.default(i.default),u.default(e.info)]),r.h("div",{class:"column-2"},[e.view(n),a.default(e.info)])])}};
+},{"hyperapp":"aft2","./PageGroup":"g3vG","./Link":"NZWM","../pages/index/ref":"uBlh","./NextPageInGroup":"Qn4B"}],"nkpN":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=require("hyperapp"),t=e(require("./info")),i=e(require("../../../../components/PageView")),u=function(){return r.h("p",{},"2 Lets draw a circle")};r.app({init:{},view:i.default({view:u,info:t.default}),node:document.body});
 },{"hyperapp":"aft2","./info":"hq3f","../../../../components/PageView":"q5wr"}]},{},["nkpN"], null)
-//# sourceMappingURL=2-first-drawing.4de1bef1.js.map
+//# sourceMappingURL=2-first-drawing.47ae252d.js.map
