@@ -24,7 +24,7 @@ const view = () =>
     This is where you put your drawing and animation code.
 
     {LineJump()}
-    <i>Whith that said, let's start drawing !</i>
+    <i>With that said, let's start drawing !</i>
 </div>
 
 app({
