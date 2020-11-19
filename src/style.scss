@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 $bgColor: rgb(37, 37, 37);
+$base-font-size: 16px;
 
 html {
     background: $bgColor;
     color: white;
     font-family: 'Lora', serif;
+    font-size: $base-font-size;
 }
 
 .table-of-contents {
@@ -37,9 +39,10 @@ a {
 }
 
 .code {
-    font-style: italic;
+    font-family: Courier, sans-serif;
+    font-size: $base-font-size * 1.1;
     &.inline {
-
+        // font-style: italic;
     }
 }
 
