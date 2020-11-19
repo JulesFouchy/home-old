@@ -3,7 +3,7 @@ import { PageInfo } from '../types/PageInfo'
 import TableOfContents from './TableOfContents'
 
 export default (info: PageInfo) => {
-    return h(
+    return info.group && h(
         'div',
     {
         class: 'page-group'
