@@ -4,6 +4,7 @@ import PageView from '../../../../components/PageView'
 import InlineCode from '../../../../components/InlineCode'
 import LineJump from '../../../../components/LineJump'
 import Highlight from '../../../../components/Highlight'
+import FileName from '../../../../components/FileName'
 
 const view = () =>
 <div>
@@ -14,7 +15,8 @@ const view = () =>
     this is where you choose the size of your canvas, initialize variables `, h('i', {}, 'etc.')])}
     If you are using my template you don't need to worry about choosing a size :
     it is done automatically, the default being a square that fills the window with a 25px margin.
-    (You can change this by modifying the {InlineCode("desiredCanvasWidth")} and {InlineCode("desiredCanvasHeight")} functions).
+    (You can change this by modifying the {InlineCode("desiredCanvasWidth")} and {InlineCode("desiredCanvasHeight")} functions
+    inside {FileName("chooseCanvasSize.ts")}).
     The nice thing about specifying the size the way I did is that when the window resizes, the canvas is adapted automatically.
 
     <h2>Draw</h2>
