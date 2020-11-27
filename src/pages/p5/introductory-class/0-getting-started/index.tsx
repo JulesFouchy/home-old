@@ -19,7 +19,7 @@ const view = () =>
         ])}
     <h2>Documentation</h2>
         p5 has a wonderfull website with tons of examples and a really nice documentation ; check it out whenever you are
-        looking for something ! {Link('https://p5js.org/reference/')}
+        looking for something ! {Link('https://p5js.org/reference')}
 </div>
 
 app({
