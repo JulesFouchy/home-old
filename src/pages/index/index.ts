@@ -1,6 +1,5 @@
 import { h, app } from 'hyperapp'
-import Link from '../../components/Link'
-import GroupLink from '../../components/GroupLink'
+import { PageLink, GroupLink } from '../../components/Link'
 //
 import group_p5Intro from '../p5/introductory-class/group'
 import page_hexagons from '../hexagons/info'
@@ -13,7 +12,7 @@ const view = () =>
     }, 
     [
         'Hello Web',
-        Link(page_hexagons.ref),
+        PageLink(page_hexagons.ref),
         GroupLink(group_p5Intro),
     ])
 

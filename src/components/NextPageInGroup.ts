@@ -1,6 +1,7 @@
 import { h } from 'hyperapp'
 import { PageInfo } from '../types/PageInfo'
 import { PageRef } from '../types/PageRef'
+import { PageLink } from './Link'
 
 export default (info: PageInfo) => {
     if (info.group) {
@@ -17,7 +18,7 @@ export default (info: PageInfo) => {
             },
             [
                 'Next : ',
-                h('a', {href: nextPage.url}, nextPage.name)
+                PageLink(nextPage)
             ]
         )
     }

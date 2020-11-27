@@ -1,7 +1,7 @@
 import { h } from 'hyperapp'
 import { Page } from '../types/Page'
 import PageGroup from './PageGroup'
-import Link from './Link'
+import { PageLink } from './Link'
 import IndexRef from '../pages/index/ref'
 import NextPageInGroup from './NextPageInGroup'
 
@@ -18,7 +18,7 @@ export default (page: Page) => {
                 class: 'column-1'
             },
             [
-                Link(IndexRef),
+                PageLink(IndexRef),
                 PageGroup(page.info),
             ]
             ),

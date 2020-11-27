@@ -1,6 +1,6 @@
 import { h } from 'hyperapp'
 import { PageRef } from '../types/PageRef'
-import Link from './Link'
+import { PageLink } from './Link'
 
 export default (pages: PageRef[], currPageName: string) => {
     return h(
@@ -9,7 +9,7 @@ export default (pages: PageRef[], currPageName: string) => {
         class: 'table-of-contents'
     },
         pages.map(page => 
-            Link(page, 
+            PageLink(page, 
             [
                 h('div',
                 {
