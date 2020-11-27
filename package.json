@@ -5,7 +5,7 @@
   "author": "Jules Fouchy",
   "license": "ISC",
   "scripts": {
-    "dev": "cross-env DEBUG=true parcel ./src/html/* --open",
+    "dev": "cross-env DEBUG=true parcel ./src/html/*",
     "prebuild": "rmdir docs /s /q",
     "build": "parcel build ./src/html/* --out-dir docs --public-url ./"
   },
