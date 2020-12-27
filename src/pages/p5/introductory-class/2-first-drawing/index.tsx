@@ -3,6 +3,7 @@ import info from './info'
 import PageView from '../../../../components/PageView'
 import InlineCode from '../../../../components/InlineCode'
 import LineJump from '../../../../components/LineJump'
+import p5Code from '../../../../components/p5Code'
 
 const view = () => 
 <div>
@@ -14,7 +15,7 @@ Here are all the basics of p5, sorted by how likely they are to prove usefull to
             that can be wider in one direction).
             <br/>
             We specify them by giving the center x and y, and then the radius
-            (or two radii if we want to have a different size along the x and y axes)
+            (or two radii if we want to have different sizes along the x and y axes)
         <h3>Rect</h3>
                 
     <h2>Colors (Usefullness : 100%)</h2>
@@ -27,7 +28,7 @@ Here are all the basics of p5, sorted by how likely they are to prove usefull to
         remove the fill by calling {InlineCode("noFill()")}
         <br/>
         Note that the colors (and other settings) you specify remain until you change them. So for example calling
-        {Code(
+        {p5Code(
             `fill(255, 0, 0)
             ellipse(0, 0, 50)
             rect(200, 200, 100, 100)
@@ -37,7 +38,7 @@ Here are all the basics of p5, sorted by how likely they are to prove usefull to
 
     <h2>The coordinate system</h2>
 
-    Important to note : the y-axis is pointing down ! So y = 0 means the top of the canva, and y = height means the bottom.
+    Important to note : the y-axis is pointing down ! So y = 0 means the top of the canva, and y = height-1 means the bottom.
     The x-axis is pointing right, and 0 is the left of canvas.
     If you prefer having (0, 0) as the center of the canvas, you can do translate(width/2, height/2) before your start drawing.
 
