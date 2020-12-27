@@ -28,12 +28,11 @@ Here are all the basics of p5, sorted by how likely they are to prove usefull to
         remove the fill by calling {InlineCode("noFill()")}
         <br/>
         Note that the colors (and other settings) you specify remain until you change them. So for example calling
-        {p5Code(
-            `fill(255, 0, 0)
-            ellipse(0, 0, 50)
-            rect(200, 200, 100, 100)
-            `
-        )}
+        {p5Code(`
+fill(255, 0, 0)
+ellipse(0, 0, 50)
+rect(200, 200, 100, 100)
+        `)}
         will draw both the ellipse and the rectangle in red.
 
     <h2>The coordinate system</h2>
