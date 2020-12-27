@@ -29,17 +29,18 @@ Here are all the basics of p5, sorted by how likely they are to prove usefull to
         <br/>
         Note that the colors (and other settings) you specify remain until you change them. So for example calling
         {p5Code(`
+// Choose a red color
 fill(255, 0, 0)
-ellipse(0, 0, 50)
-rect(200, 200, 100, 100)
+// Draw some shapes
+ellipse(100, 100, 50)
+rect(200, 200, 100)
         `)}
         will draw both the ellipse and the rectangle in red.
 
     <h2>The coordinate system</h2>
 
-    Important to note : the y-axis is pointing down ! So y = 0 means the top of the canva, and y = height-1 means the bottom.
-    The x-axis is pointing right, and 0 is the left of canvas.
-    If you prefer having (0, 0) as the center of the canvas, you can do translate(width/2, height/2) before your start drawing.
+    Important to note : the y-axis is pointing down ! So (0, 0) is the top-left of the canvas.
+    If you prefer having (0, 0) as the center of the canvas, you can do {InlineCode("translate(width/2, height/2)")} before your start drawing.
 
     {LineJump()}
     Exercize : draw Mickey Mouse's face (it can be as simple as three circles ; additional details are welcome)
