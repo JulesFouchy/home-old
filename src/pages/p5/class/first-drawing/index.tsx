@@ -17,6 +17,7 @@ Here are all the basics of p5, sorted by how likely they are to prove usefull to
             <br/>
             We specify them by giving the center x and y, and then the radius
             (or two radii if we want to have different sizes along the x and y axes)
+            <br/><br/>
             {p5Code(`
 ellipse(
     width/2,  // center (x coordinate)
@@ -34,6 +35,7 @@ ellipse(
         <h3>Rect</h3>
             Rectangles use almost the same parameters as Ellipses. The big difference though is that the first two parameters
             are (by default) the coordinates of the top-left corner, not the center ! (You can change this with the {InlineCode("rectMode")} function)
+        <br/><br/>
         {p5Code(`
 // rectMode(CENTER)
 rect(
@@ -61,7 +63,8 @@ rect(
             remove the fill by calling {InlineCode("noFill()")}
         </div>
         <br/>
-        Note that the colors (and other settings) you specify remain until you change them. So for example calling
+        Note that the colors (and other settings) you specify remain until you change them. So for example this will draw both the ellipse and the rectangle in orange.
+        <br/><br/>
         {p5Code(`
 // Choose an orange color and no stroke
 fill(
@@ -74,7 +77,6 @@ noStroke()
 ellipse(100, 100, 50)
 rect(200, 200, 100)
         `)}
-        will draw both the ellipse and the rectangle in orange.
 
     <h2>The coordinate system</h2>
 
