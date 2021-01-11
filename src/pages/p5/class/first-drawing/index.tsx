@@ -8,7 +8,11 @@ import { Link } from '../../../../components/Link'
 
 const view = () => 
 <div>
-Here are all the basics of p5, sorted by how likely they are to prove usefull to you one day.
+Here are all the basics of p5.
+    <h2>width & height</h2>
+    {InlineCode("width")} and {InlineCode("height")} are built-in variables that allow you to access the size of the sketch at any time.
+    You will see me use them all the time, and you should really be using them to position your shapes relatively inside the canvas.
+    For example {InlineCode("(width/2, height/2)")} will put the object at the center of the canvas.
     <h2>Shapes</h2>
         p5 knows how to draw quite a few shapes ! We will take a look at the most common ones here, and remember that you can find them <i>all</i> at {Link("https://p5js.org/reference/")}.
         <h3>Ellipse</h3>
@@ -56,12 +60,14 @@ rect(
         <div class="highlight">
             {InlineCode('fill')} is used to color the inside of the shape, and {InlineCode('stroke')} is used for its boundary.
             <br/>
-            The default way of specifing a color is by giving its RGB values. For example {InlineCode('fill(255, 145, 23)')}
-            will give some nice orange. (You can make so that {InlineCode('fill')} takes in HSB or HSL values instead of RGB with the {InlineCode('colorMode')} function).
-            <br/>
             If you don't want any stroke, you can remove it by calling {InlineCode("noStroke()")}. And you can
-            remove the fill by calling {InlineCode("noFill()")}
+            remove the fill by calling {InlineCode("noFill()")}.
         </div>
+        The default way of specifing a color is by giving its RGB values. For example {InlineCode('fill(255, 145, 23)')}
+        will give some nice orange. (You can make so that {InlineCode('fill')} takes in HSB or HSL values instead of RGB with the {InlineCode('colorMode')} function).
+        <br/>
+        You can also use an hexadecimal string like {InlineCode('"#FF9117"')}.
+        <br/>
         <br/>
         Note that the colors (and other settings) you specify remain until you change them. So for example this will draw both the ellipse and the rectangle in orange.
         <br/><br/>
@@ -72,6 +78,7 @@ fill(
     145, // Green (between 0 and 255)
     23   // Blue  (between 0 and 255)
 )
+// fill("#FF9117")
 noStroke()
 // Draw some shapes
 ellipse(100, 100, 50)
@@ -86,7 +93,35 @@ rect(200, 200, 100)
     {LineJump()}
     Exercise : draw Mickey Mouse's face (it can be as simple as three circles ; additional details are welcome)
 
-    <h2>Usefull functions</h2>
+    <h2>random</h2>
+    Returns a random number inside a given interval
+    <br/><br/>
+    {p5Code(`
+const radius = 50
+ellipse(
+    random(radius, width  - radius), // Center x
+    random(radius, height - radius), // Center y
+    radius * 2                       // Diameter
+)
+    `)}
+
+    <h2>lerp & lerpColor</h2>
+    This is basically what allows you to make gradients.
+    <br/><br/>
+    {p5Code(`
+for (let t = 0; t < 1; t += 0.1) {
+    const diameter = lerp(
+      20,  // start
+      150, // end
+      t    // progression percentage (between 0 and 1)
+    )
+    const col = lerpColor(color("#FFC003"), color("#6D32ED"), t)
+    const x = lerp(10, width - 100, t)
+    fill(col)
+    noStroke()
+    ellipse(x, height/2, diameter)
+}
+    `)}
 </div>
 
 app({
