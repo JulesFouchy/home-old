@@ -1,7 +1,7 @@
 import { PageRef } from '../../../../types/PageRef'
 
 const pageRef: PageRef = {
-    url: './p5-introduction-2-first-drawing.html',
+    url: './p5-first-drawing.html',
     name: 'First Drawing',
 }
 
