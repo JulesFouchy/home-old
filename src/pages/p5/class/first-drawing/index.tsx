@@ -105,6 +105,17 @@ ellipse(
 )
     `)}
 
+    <br/><br/>
+    It can also give you a random element of a list
+    <br/><br/>
+    {p5Code(`
+const colors = ["#4287f5", "#f0243f", "#94f268"]
+
+fill(random(colors)) // Pick a random color from the list
+
+ellipse(width/2, height/2, 100)
+    `)}
+
     <h2>lerp & lerpColor</h2>
     This is basically what allows you to make gradients.
     <br/><br/>
