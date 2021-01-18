@@ -106,7 +106,7 @@ ellipse(
     `)}
 
     <br/><br/>
-    It can also give you a random element of a list
+    It can also give you a random element from a list
     <br/><br/>
     {p5Code(`
 const colors = ["#4287f5", "#f0243f", "#94f268"]
@@ -131,6 +131,20 @@ for (let t = 0; t < 1; t += 0.1) {
     fill(col)
     noStroke()
     ellipse(x, height/2, diameter)
+}
+    `)}
+
+    <h2>p5.Vector</h2>
+    A p5.Vector is a type that holds two (or three) coordinates : x, y and z. <br/>
+    It has a lot of usefull methods like getting its length or direction, and you can do math operations between them. <br/>
+    PS : check {Link("https://p5js.org/reference/#/p5.Vector", "the documentation")} !
+    <br/><br/>
+    One nice thing in particular is that you can create them from an angle :
+    <br/><br/>
+    {p5Code(`
+for (let angle = 0; angle < TWO_PI; angle += TWO_PI / 6) {
+    const p = p5.Vector.fromAngle(angle).mult(100) // Vector of length 100 pointing in the direction of angle
+    ellipse(width/2 + p.x, height/2 + p.y, 50)
 }
     `)}
 </div>
