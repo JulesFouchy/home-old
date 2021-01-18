@@ -84,6 +84,19 @@ noStroke()
 ellipse(100, 100, 50)
 rect(200, 200, 100)
         `)}
+        <br/><br/>
+        The last (important) one in the family is {InlineCode("strokeWeight")}. It controls the thickness of the stroke, which is also the size of points and lines.<br/>
+        It has a value of one by default.
+        <br/><br/>
+        {p5Code(`
+strokeWeight(10)
+    ellipse(width/2, height/2, 100)
+    point(width/2, height/2)
+strokeWeight(50)
+    line(100, height*0.8, width-100, height*0.8)
+strokeWeight(1) // Back to default
+    line(100, height*0.3, width-100, height*0.3)
+        `)}
 
     <h2>The coordinate system</h2>
 
