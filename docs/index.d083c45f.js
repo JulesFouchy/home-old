@@ -16,7 +16,11 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=e(require("./getting-started/ref")),t=e(require("./setup-and-draw/ref")),u=e(require("./first-drawing/ref")),a=e(require("./inspirations/ref")),i={name:"Introduction to p5",pages:[r.default,t.default,u.default,a.default]};exports.default=i;
 },{"./getting-started/ref":"y8r7","./setup-and-draw/ref":"ayG7","./first-drawing/ref":"xFTc","./inspirations/ref":"wNnP"}],"pTfH":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e={ref:{url:"./hexagons.html",name:"Hexagons Experiment"}};exports.default=e;
-},{}],"FXnY":[function(require,module,exports) {
-"use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=require("hyperapp"),i=require("../../components/Link"),t=e(require("../p5/class/group")),u=e(require("../hexagons/info")),n=function(){return r.h("div",{class:"main-layout"},["Hello Web",i.PageLink(u.default.ref),i.GroupLink(t.default)])};r.app({init:{},view:n,node:document.body});
-},{"hyperapp":"aft2","../../components/Link":"NZWM","../p5/class/group":"lBP6","../hexagons/info":"pTfH"}]},{},["FXnY"], null)
-//# sourceMappingURL=index.94ed26ac.js.map
+},{}],"pLrw":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e={url:"./c3ga-complex-sphere.html",name:"Complex Sphere"};exports.default=e;
+},{}],"IJ7g":[function(require,module,exports) {
+"use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=e(require("./c3ga-complex-sphere/ref")),t={name:"Artworks",pages:[r.default]};exports.default=t;
+},{"./c3ga-complex-sphere/ref":"pLrw"}],"FXnY":[function(require,module,exports) {
+"use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=require("hyperapp"),u=require("../../components/Link"),i=e(require("../p5/class/group")),t=e(require("../hexagons/info")),o=e(require("../artworks/group")),n=function(){return r.h("div",{class:"main-layout"},["Hello Web",u.PageLink(t.default.ref),u.GroupLink(i.default),u.GroupLink(o.default)])};r.app({init:{},view:n,node:document.body});
+},{"hyperapp":"aft2","../../components/Link":"NZWM","../p5/class/group":"lBP6","../hexagons/info":"pTfH","../artworks/group":"IJ7g"}]},{},["FXnY"], null)
+//# sourceMappingURL=index.d083c45f.js.map
