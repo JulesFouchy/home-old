@@ -1,7 +1,6 @@
-import { h, app } from 'hyperapp'
+import { app } from 'hyperapp'
 import info from './info'
 import PageView from '../../../components/PageView'
-import LineJump from '../../../components/LineJump'
 import { Link } from '../../../components/Link'
 import InlineCode from '../../../components/InlineCode'
 
@@ -15,10 +14,10 @@ What you see here is a simple sphere, plus two rendering tricks.
 <br/><br/>
 The main one is inspired by <b>Conformal Geometric Algebra</b>, an alternative way of doing geometry.
 <br/>
-Geometric Algebra in general is a theory that generalizes many concepts such as complex numbers, quaternions, dual numbers and many more. It offers
-a very abstract and powerfull way of working with geometric primitives.
+<b>Geometric Algebra</b> in general is a theory that generalizes many concepts such as complex numbers, quaternions, dual numbers and many more. It offers
+a very abstract and powerful way of working with geometric primitives.
 <br/>
-In particular, 3D Conformal Geometric Algebra is a 32-dimensional vector space where both points, pairs of points, directions, lines, planes, circles and spheres can be 
+In particular, <b>3D Conformal Geometric Algebra</b> is a 32-dimensional vector space where both points, pairs of points, directions, lines, planes, circles and spheres can be 
 natively represented as (32-dimensional) vectors. Using the many products defined on this algebra, we can express usual operations very
 easily.
 <br/><br/>
