@@ -86,7 +86,7 @@ rect(200, 200, 100)
         `)}
         <br/><br/>
         The last (important) one in the family is {InlineCode("strokeWeight")}. It controls the thickness of the stroke, which is also the size of points and lines.<br/>
-        It has a value of one by default.
+        It has a value of 1 by default.
         <br/><br/>
         {p5Code(`
 strokeWeight(10)
@@ -122,10 +122,11 @@ ellipse(
     It can also give you a random element from a list
     <br/><br/>
     {p5Code(`
-const colors = ["#4287f5", "#f0243f", "#94f268"]
+const colorsList = ["#4287f5", "#f0243f", "#94f268"]
 
-fill(random(colors)) // Pick a random color from the list
+const myColor = random(colorsList) // Pick a random color from the list
 
+fill(myColor)
 ellipse(width/2, height/2, 100)
     `)}
 
@@ -155,9 +156,11 @@ for (let t = 0; t < 1; t += 0.1) {
     One nice thing in particular is that you can create them from an angle :
     <br/><br/>
     {p5Code(`
+translate(width/2, height/2) // put (0, 0) in the center of the canvas because the vectors will be distributed around (0, 0)
+
 for (let angle = 0; angle < TWO_PI; angle += TWO_PI / 6) {
     const p = p5.Vector.fromAngle(angle).mult(100) // Vector of length 100 pointing in the direction of angle
-    ellipse(width/2 + p.x, height/2 + p.y, 50)
+    ellipse(p.x, p.y, 50)
 }
     `)}
 
