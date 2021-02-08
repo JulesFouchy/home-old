@@ -19,6 +19,7 @@ const view = () =>
     it is done automatically, the default being a square that fills the window with a 25px margin.
     (You can change this by modifying the {InlineCode("__desiredCanvasWidth")} and {InlineCode("__desiredCanvasHeight")} functions
     inside {FileName("src/p6/chooseCanvasSize.ts")}).
+    <br/>
     The nice thing about specifying the size the way I did is that when the window resizes, the canvas is adapted automatically.
 
     <h2>Draw</h2>

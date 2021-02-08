@@ -12,6 +12,39 @@ const view = () =>
     {InlineCode("width")} and {InlineCode("height")} are built-in variables that allow you to access the size of the sketch at any time.
     You will see me use them all the time, and you should really be using them to position your shapes relatively inside the canvas.
     For example {InlineCode("(width/2, height/2)")} will put the object at the center of the canvas.
+
+    <h2>The coordinate system</h2>
+    <div class="highlight">
+        Important to note : the y-axis is pointing down ! 
+        <br/>
+        (0, 0) is the top-left of the canvas.
+    </div>
+    <br/>
+    If you prefer having (0, 0) as the center of the canvas, you can do {InlineCode("translate(width/2, height/2)")} before your start drawing.
+    <br/>
+    And to make the y-axis point up, also add {InlineCode("scale(1, -1)")}
+    <br/><br/>
+    {p5Code(`
+//translate(width/2, height/2)
+//scale(1, -1)
+
+ellipse(100, 100, 20)
+
+// -------
+// Draw the axes
+// -------
+noFill()
+strokeWeight(2)
+// x-axis
+stroke("red")
+line(-width, 0, width, 0)
+triangle(width/2, 0, width/2 - 10, 10, width/2 - 10, -10)
+// y-axis
+stroke("green")
+line(0, -height, 0, height)
+triangle(0, height/2, 10 , height/2 - 10, -10, height/2 - 10)
+        `)}
+
     <h2>Shapes</h2>
         p5 knows how to draw quite a few shapes ! We will take a look at the most common ones here, and remember that you can find them <i>all</i> at {Link("https://p5js.org/reference/")}.
         <h3>Ellipse</h3>
@@ -97,11 +130,6 @@ strokeWeight(50)
 strokeWeight(1) // Back to default
     line(100, height*0.3, width-100, height*0.3)
         `)}
-
-    <h2>The coordinate system</h2>
-
-    Important to note : the y-axis is pointing down ! So (0, 0) is the top-left of the canvas.
-    If you prefer having (0, 0) as the center of the canvas, you can do {InlineCode("translate(width/2, height/2)")} before your start drawing.
 
     <br/><br/>
     <div class="highlight">
