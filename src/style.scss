@@ -59,6 +59,12 @@ a {
     padding: 5px;
 }
 
+.exercises {
+    border: gray solid 2px;
+    background-color: rgba(100, 100, 100, 0.5);
+    padding: 5px;
+}
+
 $page-elems-margin: 25px;
 .page-layout {
     display: flex;

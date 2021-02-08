@@ -5,6 +5,7 @@ import InlineCode from '../../../../components/InlineCode'
 import LineJump from '../../../../components/LineJump'
 import p5Code from '../../../../components/p5Code'
 import { Link } from '../../../../components/Link'
+import Exercises from '../../../../components/Exercises'
 
 const view = () => 
 <div>
@@ -132,9 +133,11 @@ strokeWeight(1) // Back to default
         `)}
 
     <br/><br/>
-    <div class="highlight">
-        Exercise : draw Mickey Mouse's face (it can be as simple as three circles ; additional details are welcome)
-    </div>
+    {Exercises([
+        "Draw Mickey Mouse's face",
+        "Draw a house",
+        "Draw a face",
+    ])}
 </div>
 
 app({
