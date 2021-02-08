@@ -70,10 +70,13 @@ for (let angle = 0; angle < TWO_PI; angle += TWO_PI / 6) {
     <h2>Transforms : translate, rotate and scale</h2>
     When you start doing more complex things, keeping track of all the relative coordinates can get very annoying : <br/>
     Transforms can help you handle that very nicely ! <br/>
-    Also, some things like drawing a square rotated by 45° cannot be done except with transforms ! <br/>
-    So here is a nice tutorial about them : {Link("https://processing.org/tutorials/transform2d/")} <br/>
-    It is using Processing and not p5, but the functions are exactly the same !
-    (except that {InlineCode("pushMatrix")} is called {InlineCode("push")} in p5, and {InlineCode("popMatrix")} is called {InlineCode("pop")}).
+    Also, some things like drawing a square rotated by 45° cannot be done except with transforms !
+    <br/><br/>
+    <div className="highlight">
+        Here is a nice tutorial about transforms : {Link("https://processing.org/tutorials/transform2d/")} <br/>
+        It is using Processing and not p5, but the functions are exactly the same !
+        (except that {InlineCode("pushMatrix")} is called {InlineCode("push")} in p5, and {InlineCode("popMatrix")} is called {InlineCode("pop")}).
+    </div>
 </div>
 
 app({
