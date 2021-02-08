@@ -9,7 +9,7 @@ html {
     color: white;
     font-family: 'Lora', serif;
     font-size: $base-font-size;
-    line-height: 1.3 * $base-font-size;
+    line-height: 1.325 * $base-font-size;
 }
 
 .table-of-contents {
@@ -32,10 +32,11 @@ html {
     padding: 5px;
 }
 
+$link_color: rgb(89, 114, 255);
 a {
-    color: rgb(77, 103, 255);
+    color: $link_color;
     &:visited {
-        color: rgb(116, 77, 255);
+        color: $link_color;
     }
     text-decoration: none;
 }
@@ -53,13 +54,9 @@ a {
 }
 
 .highlight {
-    background-color: gray;
-    padding: 10px;
-    margin: 5px 0;
-}
-
-.anecdote {
-    border: gray solid 1px;
+    border: gray dashed 1px;
+    background-color: rgba(100, 100, 100, 0.5);
+    padding: 5px;
 }
 
 $page-elems-margin: 25px;
