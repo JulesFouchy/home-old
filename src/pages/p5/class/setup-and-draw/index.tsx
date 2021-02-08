@@ -22,7 +22,7 @@ const view = () =>
 
     <h2>Draw</h2>
     <div class="highlight">
-        {InlineCode("draw")}, will be called over and over, 60 times a second.
+        {InlineCode("draw")} will be called over and over, 60 times a second.
     </div>
     This is where you put your drawing and animation code.
 

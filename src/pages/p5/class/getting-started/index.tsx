@@ -6,7 +6,7 @@ import { Link } from '../../../../components/Link'
 
 const view = () =>
 <div>
-    <h2>THE p5 template</h2>
+    <h2><b>The</b> p5 template</h2>
         I have an amazing template ready for you and I would highly recommend you use it for all your p5 action.
         <br/>
         Everything is already explained in the <i>ReadMe</i>, so I'll see you soon when your are done setting it up, ready to discover ✨ p5.js ✨.
