@@ -14,6 +14,7 @@ const view = () =>
         {InlineCode("setup")} will be called once at the start of your programm :
         this is where you choose the size of your canvas, initialize variables <i>etc.</i>
     </div>
+    <br/>
     If you are using my template you don't need to worry about choosing a size :
     it is done automatically, the default being a square that fills the window with a 25px margin.
     (You can change this by modifying the {InlineCode("__desiredCanvasWidth")} and {InlineCode("__desiredCanvasHeight")} functions
@@ -24,6 +25,7 @@ const view = () =>
     <div class="highlight">
         {InlineCode("draw")} will be called over and over, 60 times a second.
     </div>
+    <br/>
     This is where you put your drawing and animation code.
 
     {LineJump()}

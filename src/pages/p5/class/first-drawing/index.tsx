@@ -8,7 +8,6 @@ import { Link } from '../../../../components/Link'
 
 const view = () => 
 <div>
-Here are all the basics of p5.
     <h2>width & height</h2>
     {InlineCode("width")} and {InlineCode("height")} are built-in variables that allow you to access the size of the sketch at any time.
     You will see me use them all the time, and you should really be using them to position your shapes relatively inside the canvas.
@@ -19,8 +18,8 @@ Here are all the basics of p5.
             Ellipses are circles that can be wider in one direction (just like rectangles are squares
             that can be wider in one direction).
             <br/>
-            We specify them by giving the center x and y, and then the radius
-            (or two radii if we want to have different sizes along the x and y axes)
+            We specify them by giving the center x and y, and then the diameter
+            (or two diameters if we want to have different sizes along the x and y axes)
             <br/><br/>
             {p5Code(`
 ellipse(
@@ -63,6 +62,7 @@ rect(
             If you don't want any stroke, you can remove it by calling {InlineCode("noStroke()")}. And you can
             remove the fill by calling {InlineCode("noFill()")}.
         </div>
+        <br/>
         The default way of specifing a color is by giving its RGB values. For example {InlineCode('fill(255, 145, 23)')}
         will give some nice orange. (You can make so that {InlineCode('fill')} takes in HSB or HSL values instead of RGB with the {InlineCode('colorMode')} function).
         <br/>
@@ -103,8 +103,10 @@ strokeWeight(1) // Back to default
     Important to note : the y-axis is pointing down ! So (0, 0) is the top-left of the canvas.
     If you prefer having (0, 0) as the center of the canvas, you can do {InlineCode("translate(width/2, height/2)")} before your start drawing.
 
-    {LineJump()}
-    Exercise : draw Mickey Mouse's face (it can be as simple as three circles ; additional details are welcome)
+    <br/><br/>
+    <div class="highlight">
+        Exercise : draw Mickey Mouse's face (it can be as simple as three circles ; additional details are welcome)
+    </div>
 
     <h2>random</h2>
     Returns a random number inside a given interval
