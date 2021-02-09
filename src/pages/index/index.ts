@@ -4,6 +4,7 @@ import { PageLink, GroupLink } from '../../components/Link'
 import group_p5Intro from '../p5/class/group'
 import page_hexagons from '../hexagons/info'
 import group_artworks from '../artworks/group'
+import group_pedagogy from '../pedagogy/group'
 
 const view = () =>
     h(
@@ -16,6 +17,7 @@ const view = () =>
         PageLink(page_hexagons.ref),
         GroupLink(group_p5Intro),
         GroupLink(group_artworks),
+        GroupLink(group_pedagogy),
     ])
 
 app({
