@@ -4,7 +4,7 @@ import PageView from './PageView'
 
 interface Annotation {
     timeStamp: number,
-    comment: string,
+    comment: any,
 }
   
 const setVideoTimeStamp = (timeStamp: number) => (state) => ({
@@ -15,7 +15,6 @@ const setVideoTimeStamp = (timeStamp: number) => (state) => ({
 })
 
 export default (info: PageInfo, youtubeVideoID: string, annotations: Annotation[]) => {
-
     const state = {
         timeStamp: 0,
         autoplay: false,
@@ -53,7 +52,8 @@ export default (info: PageInfo, youtubeVideoID: string, annotations: Annotation[
                                 },
                                 "Go To"
                             ),
-                            " " + annotation.comment,
+                            " ",
+                            annotation.comment,
                         ]
                     )
                 )
