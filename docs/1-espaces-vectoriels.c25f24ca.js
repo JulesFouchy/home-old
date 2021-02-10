@@ -14,9 +14,9 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e={url:"./sm-s2-5.html",name:"Diagonalisation"};exports.default=e;
 },{}],"szQW":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=e(require("./fiche-recap/ref")),t=e(require("./1-espaces-vectoriels/ref")),i=e(require("./2-dimension/ref")),a=e(require("./3-matrices/ref")),u=e(require("./4-determinant/ref")),f=e(require("./5-diagonalisation/ref")),s={name:"Soutien Maths S2 : Algèbre Linéaire",pages:[r.default,t.default,i.default,a.default,u.default,f.default]};exports.default=s;
-},{"./fiche-recap/ref":"hVZD","./1-espaces-vectoriels/ref":"UMYH","./2-dimension/ref":"Ptjw","./3-matrices/ref":"yXvH","./4-determinant/ref":"JiQL","./5-diagonalisation/ref":"S6be"}],"MLnJ":[function(require,module,exports) {
+},{"./fiche-recap/ref":"hVZD","./1-espaces-vectoriels/ref":"UMYH","./2-dimension/ref":"Ptjw","./3-matrices/ref":"yXvH","./4-determinant/ref":"JiQL","./5-diagonalisation/ref":"S6be"}],"ZAYZ":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=e(require("../group")),t=e(require("./ref")),u={ref:t.default,group:r.default};exports.default=u;
-},{"../group":"szQW","./ref":"yXvH"}],"RDJ8":[function(require,module,exports) {
+},{"../group":"szQW","./ref":"UMYH"}],"RDJ8":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=function(e){return e.substring(e.indexOf("//")+2)};
 },{}],"NZWM":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0}),exports.GroupLink=exports.PageLink=exports.Link=void 0;var r=require("hyperapp"),t=e(require("../helper/RemoveProtocolFromURL")),o=function(e,o){return r.h("a",{href:e},o||t.default(e))};exports.Link=o;var n=function(e,r){return o(e.url,r||e.name)};exports.PageLink=n;var u=function(e){return o(e.pages[0].url,e.name)};exports.GroupLink=u;
@@ -31,10 +31,10 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"hyperapp":"aft2","./Link":"NZWM"}],"q5wr":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=require("hyperapp"),u=e(require("./PageGroup")),t=require("./Link"),i=e(require("../pages/index/ref")),a=e(require("./NextPageInGroup"));exports.default=function(e){return function(n){return r.h("div",{class:"page-layout"},[r.h("div",{class:"column-1"},[t.PageLink(i.default),u.default(e.info)]),r.h("div",{class:"column-2"},[e.view(n),a.default(e.info)])])}};
 },{"hyperapp":"aft2","./PageGroup":"g3vG","./Link":"NZWM","../pages/index/ref":"uBlh","./NextPageInGroup":"Qn4B"}],"WRVA":[function(require,module,exports) {
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("hyperapp");exports.default=function(r){return e.h("iframe",{src:r,width:"100%",height:"1000px"})};
-},{"hyperapp":"aft2"}],"Cdto":[function(require,module,exports) {
-module.exports="3.c292c25e.pdf";
-},{}],"bwRW":[function(require,module,exports) {
-"use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=require("hyperapp"),t=e(require("./info")),u=e(require("../../../components/PageView")),i=e(require("../../../components/Pdf")),n=e(require("../pdf/3.pdf")),o=function(){return r.h("div",null,i.default(n.default))};r.app({init:{},view:u.default({view:o,info:t.default}),node:document.body});
-},{"hyperapp":"aft2","./info":"MLnJ","../../../components/PageView":"q5wr","../../../components/Pdf":"WRVA","../pdf/3.pdf":"Cdto"}]},{},["bwRW"], null)
-//# sourceMappingURL=3-matrices.6d417f76.js.map
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("hyperapp");exports.default=function(t){return e.h("embed",{src:t,width:"100%",height:"1000px",type:"application/pdf"})};
+},{"hyperapp":"aft2"}],"PHJ6":[function(require,module,exports) {
+module.exports="1.a6e633d5.pdf";
+},{}],"xcJS":[function(require,module,exports) {
+"use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=require("hyperapp"),t=e(require("./info")),u=e(require("../../../components/PageView")),i=e(require("../../../components/Pdf")),n=e(require("../pdf/1.pdf")),o=function(){return r.h("div",null,i.default(n.default))};r.app({init:{},view:u.default({view:o,info:t.default}),node:document.body});
+},{"hyperapp":"aft2","./info":"ZAYZ","../../../components/PageView":"q5wr","../../../components/Pdf":"WRVA","../pdf/1.pdf":"PHJ6"}]},{},["xcJS"], null)
+//# sourceMappingURL=1-espaces-vectoriels.c25f24ca.js.map

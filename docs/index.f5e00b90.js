@@ -32,7 +32,19 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e={url:"./patrick-winston.html",name:"Patrick Winston"};exports.default=e;
 },{}],"fkN1":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=e(require("./ben-ben-and-blue/ref")),t=e(require("./walter-lewin/ref")),u=e(require("./patrick-winston/ref")),a={name:"Pedagogy",pages:[r.default,t.default,u.default]};exports.default=a;
-},{"./ben-ben-and-blue/ref":"JXUD","./walter-lewin/ref":"mvFq","./patrick-winston/ref":"xkME"}],"hVZD":[function(require,module,exports) {
+},{"./ben-ben-and-blue/ref":"JXUD","./walter-lewin/ref":"mvFq","./patrick-winston/ref":"xkME"}],"EPY2":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e={url:"./sm-s1-1.html",name:"Fonctions et Courbes"};exports.default=e;
+},{}],"mEtV":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e={url:"./sm-s1-2.html",name:"Dérivées"};exports.default=e;
+},{}],"MtUT":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e={url:"./sm-s1-3.html",name:"Développements limités"};exports.default=e;
+},{}],"yvHn":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e={url:"./sm-s1-4.html",name:"Étude de fonction"};exports.default=e;
+},{}],"jENw":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e={url:"./sm-s1-5.html",name:"Intégrales"};exports.default=e;
+},{}],"u1DU":[function(require,module,exports) {
+"use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=e(require("./1-fonctions/ref")),t=e(require("./2-derivee/ref")),u=e(require("./3-dl/ref")),f=e(require("./4-etude-fonction/ref")),a=e(require("./5-integrale/ref")),i={name:"Soutien Maths S1 : Analyse",pages:[r.default,t.default,u.default,f.default,a.default]};exports.default=i;
+},{"./1-fonctions/ref":"EPY2","./2-derivee/ref":"mEtV","./3-dl/ref":"MtUT","./4-etude-fonction/ref":"yvHn","./5-integrale/ref":"jENw"}],"hVZD":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e={url:"./sm-s2-fiche-recap.html",name:"Fiche Récap"};exports.default=e;
 },{}],"UMYH":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e={url:"./sm-s2-1.html",name:"Espaces Vectoriels"};exports.default=e;
@@ -47,6 +59,6 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"szQW":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=e(require("./fiche-recap/ref")),t=e(require("./1-espaces-vectoriels/ref")),i=e(require("./2-dimension/ref")),a=e(require("./3-matrices/ref")),u=e(require("./4-determinant/ref")),f=e(require("./5-diagonalisation/ref")),s={name:"Soutien Maths S2 : Algèbre Linéaire",pages:[r.default,t.default,i.default,a.default,u.default,f.default]};exports.default=s;
 },{"./fiche-recap/ref":"hVZD","./1-espaces-vectoriels/ref":"UMYH","./2-dimension/ref":"Ptjw","./3-matrices/ref":"yXvH","./4-determinant/ref":"JiQL","./5-diagonalisation/ref":"S6be"}],"FXnY":[function(require,module,exports) {
-"use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=require("hyperapp"),u=require("../../components/Link"),i=e(require("../p5/class/group")),o=e(require("../hexagons/info")),t=e(require("../artworks/group")),n=e(require("../pedagogy/group")),a=e(require("../soutien-maths-s2/group")),p=function(){return r.h("div",{class:"main-layout"},["Hello Web",u.PageLink(o.default.ref),u.GroupLink(i.default),u.GroupLink(t.default),u.GroupLink(n.default),u.GroupLink(a.default)])};r.app({init:{},view:p,node:document.body});
-},{"hyperapp":"aft2","../../components/Link":"NZWM","../p5/class/group":"lBP6","../hexagons/info":"pTfH","../artworks/group":"IJ7g","../pedagogy/group":"fkN1","../soutien-maths-s2/group":"szQW"}]},{},["FXnY"], null)
-//# sourceMappingURL=index.184b7cf0.js.map
+"use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=require("hyperapp"),u=require("../../components/Link"),i=e(require("../p5/class/group")),o=e(require("../hexagons/info")),t=e(require("../artworks/group")),n=e(require("../pedagogy/group")),a=e(require("../soutien-maths-s1/group")),p=e(require("../soutien-maths-s2/group")),s=function(){return r.h("div",{class:"main-layout"},["Hello Web",u.PageLink(o.default.ref),u.GroupLink(i.default),u.GroupLink(t.default),u.GroupLink(n.default),u.GroupLink(a.default),u.GroupLink(p.default)])};r.app({init:{},view:s,node:document.body});
+},{"hyperapp":"aft2","../../components/Link":"NZWM","../p5/class/group":"lBP6","../hexagons/info":"pTfH","../artworks/group":"IJ7g","../pedagogy/group":"fkN1","../soutien-maths-s1/group":"u1DU","../soutien-maths-s2/group":"szQW"}]},{},["FXnY"], null)
+//# sourceMappingURL=index.f5e00b90.js.map

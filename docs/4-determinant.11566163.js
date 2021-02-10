@@ -31,10 +31,10 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"hyperapp":"aft2","./Link":"NZWM"}],"q5wr":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=require("hyperapp"),u=e(require("./PageGroup")),t=require("./Link"),i=e(require("../pages/index/ref")),a=e(require("./NextPageInGroup"));exports.default=function(e){return function(n){return r.h("div",{class:"page-layout"},[r.h("div",{class:"column-1"},[t.PageLink(i.default),u.default(e.info)]),r.h("div",{class:"column-2"},[e.view(n),a.default(e.info)])])}};
 },{"hyperapp":"aft2","./PageGroup":"g3vG","./Link":"NZWM","../pages/index/ref":"uBlh","./NextPageInGroup":"Qn4B"}],"WRVA":[function(require,module,exports) {
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("hyperapp");exports.default=function(r){return e.h("iframe",{src:r,width:"100%",height:"1000px"})};
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("hyperapp");exports.default=function(t){return e.h("embed",{src:t,width:"100%",height:"1000px",type:"application/pdf"})};
 },{"hyperapp":"aft2"}],"MZT3":[function(require,module,exports) {
 module.exports="4.3e9cf28c.pdf";
 },{}],"h1vQ":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=require("hyperapp"),t=e(require("./info")),u=e(require("../../../components/PageView")),i=e(require("../../../components/Pdf")),n=e(require("../pdf/4.pdf")),o=function(){return r.h("div",null,i.default(n.default))};r.app({init:{},view:u.default({view:o,info:t.default}),node:document.body});
 },{"hyperapp":"aft2","./info":"jtHF","../../../components/PageView":"q5wr","../../../components/Pdf":"WRVA","../pdf/4.pdf":"MZT3"}]},{},["h1vQ"], null)
-//# sourceMappingURL=4-determinant.2fa3ec41.js.map
+//# sourceMappingURL=4-determinant.11566163.js.map
