@@ -33,12 +33,20 @@ html {
 }
 
 $link_color: rgb(89, 114, 255);
+
 a {
     color: $link_color;
     &:visited {
         color: $link_color;
     }
     text-decoration: none;
+}
+
+.clickable {
+    color: $link_color;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .code {
