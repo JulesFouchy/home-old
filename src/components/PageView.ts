@@ -17,10 +17,16 @@ export default (page: Page) => {
             {
                 class: 'column-1'
             },
-            [
-                PageLink(IndexRef),
-                PageGroup(page.info),
-            ]
+                h(
+                    'span',
+                    {
+                        class: 'non-scrolable'
+                    },
+                    [
+                        PageLink(IndexRef),
+                        PageGroup(page.info),
+                    ]
+                )
             ),
             h(
                 'div',

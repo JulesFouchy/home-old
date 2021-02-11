@@ -2,6 +2,7 @@
 
 $bgColor: rgb(37, 37, 37);
 $base-font-size: 16px;
+$side-bar-width: 150px;
 
 html {
     background: $bgColor;
@@ -12,11 +13,33 @@ html {
     line-height: 1.325 * $base-font-size;
 }
 
+$page-elems-margin: 25px;
+.page-layout {
+    display: flex;
+    .column-1 {
+        margin: $page-elems-margin;
+        width: $side-bar-width;
+    }
+    .column-2 {
+        margin: $page-elems-margin;
+        margin-left: 0;
+        width: 82%;
+    }
+}
+
+.page-group {
+    width: $side-bar-width;
+}
+
+.non-scrolable {
+    position: fixed;
+}
+
 .table-of-contents {
     border: 2px solid black;
     display: flex;
     flex-direction: column;
-    width: 150px;
+    width: $side-bar-width;
 }
 
 .toc-element {
@@ -30,6 +53,10 @@ html {
         background: white;
     }
     padding: 5px;
+}
+
+.next-page-in-group {
+    margin: 30px;
 }
 
 $link_color: rgb(89, 114, 255);
@@ -71,23 +98,6 @@ a {
     border: gray solid 2px;
     background-color: rgba(100, 100, 100, 0.5);
     padding: 5px;
-}
-
-$page-elems-margin: 25px;
-.page-layout {
-    display: flex;
-    .column-1 {
-        margin: $page-elems-margin;
-    }
-    .column-2 {
-        margin: $page-elems-margin;
-        margin-left: 0;
-        width: 82%;
-    }
-}
-
-.next-page-in-group {
-    margin: 30px;
 }
 
 .filename {
