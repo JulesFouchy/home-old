@@ -20,7 +20,7 @@ export default (page: Page) => {
                 h(
                     'span',
                     {
-                        class: 'non-scrolable'
+                        class: 'non-scrolling'
                     },
                     [
                         PageLink(IndexRef),
