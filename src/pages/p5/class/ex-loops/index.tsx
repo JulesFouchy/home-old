@@ -3,8 +3,11 @@ import info from './info'
 import PageView from '../../../../components/PageView'
 import InlineCode from '../../../../components/InlineCode'
 import LineJump from '../../../../components/LineJump'
-import p5Code from '../../../../components/p5Code'
 import { Link } from '../../../../components/Link'
+import p5Code from '../../../../components/p5Code'
+import LoadP5Widget from '../../../../helper/LoadP5Widget'
+
+LoadP5Widget()
 
 const view = () => 
 <div>
