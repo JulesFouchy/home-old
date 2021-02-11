@@ -33,6 +33,11 @@ $page-elems-margin: 25px;
 
 .non-scrolable {
     position: fixed;
+    // Handle overflow :
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    //
 }
 
 .table-of-contents {
