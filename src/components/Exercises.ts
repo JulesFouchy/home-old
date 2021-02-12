@@ -1,6 +1,13 @@
 import { h } from 'hyperapp'
+import { Link } from './Link'
 
-export default (exercises: string[]) => {
+interface exProps {
+    title: string,
+    demoLink?: string,
+    codeLink?: string,
+}
+
+export default (exercises: exProps[]) => {
     return h(
         'div',
         {class: 'exercises'},
@@ -12,7 +19,14 @@ export default (exercises: string[]) => {
                     h(
                         'li',
                         {},
-                        exercise
+                        [
+                            exercise.title,
+                            h('div', {class: 'indent'}, [
+                                exercise.demoLink && Link(exercise.demoLink, 'Example result'),
+                                h('br'),
+                                exercise.codeLink && Link(exercise.codeLink, 'Solution'),
+                            ])
+                        ]
                     ),
                     h(
                         'br',
