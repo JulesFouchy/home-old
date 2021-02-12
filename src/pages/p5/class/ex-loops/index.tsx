@@ -6,11 +6,21 @@ import LineJump from '../../../../components/LineJump'
 import { Link } from '../../../../components/Link'
 import p5Code from '../../../../components/p5Code'
 import LoadP5Widget from '../../../../helper/LoadP5Widget'
+import Hideable from '../../../../components/Hideable'
 
 LoadP5Widget()
 
+const ex1 = <div>
+    Hello worl
+</div>
+
+const InputBox1 = Hideable()
+const InputBox2 = Hideable()
+
 const view = () => 
 <div>
+        {h(InputBox1, ex1)}
+        {h(InputBox2, ex1)}
     <div className="highlight">
         Make a chessboard pattern.
     </div>
