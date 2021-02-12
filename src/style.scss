@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 $bgColor: rgb(37, 37, 37);
+$highlightColor: rgb(68, 68, 68);
 $base-font-size: 16px;
 $side-bar-width: 150px;
 
@@ -95,14 +96,20 @@ a {
 
 .highlight {
     border: gray dashed 1px;
-    background-color: rgba(100, 100, 100, 0.5);
+    background-color: $highlightColor;
     padding: 5px;
 }
 
 .exercises {
     border: gray solid 2px;
-    background-color: rgba(100, 100, 100, 0.5);
+    background-color: $highlightColor;
     padding: 5px;
+}
+
+button {
+    background-color: $highlightColor;
+    color: white;
+    cursor: pointer;
 }
 
 .filename {
@@ -111,4 +118,17 @@ a {
 
 .hidden {
     display: none;
+}
+
+.hideable-header {
+    background-color: $highlightColor;
+    button {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+    }
+}
+
+.indent {
+    margin-left: 25px;
 }

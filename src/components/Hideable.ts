@@ -10,16 +10,24 @@ function onClick(state) {
 function Input(name: string, children: any){
   return [
     h(
-      'button', 
+      'div',
       {
-        onClick: onClick.bind(this),
+        class: 'hideable-header',
       },
-        this.hidden ? '#' : '>'
-    ),
-    h(
-      'span',
-      {},
-        name
+      [
+        h(
+          'button', 
+          {
+            onClick: onClick.bind(this),
+          },
+            this.hidden ? '#' : '>'
+        ),
+        h(
+          'span',
+          {},
+            name
+        ),
+      ]
     ),
     h(
       'div',
