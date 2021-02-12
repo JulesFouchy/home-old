@@ -10,17 +10,20 @@ import Hideable from '../../../../components/Hideable'
 
 LoadP5Widget()
 
-const ex1 = <div>
-    Hello worl
+const Ex1Help_State = Hideable()
+const Ex1Help = <div>
+    Ex1 izi
 </div>
 
-const InputBox1 = Hideable()
-const InputBox2 = Hideable()
+const Ex2Help_State = Hideable()
+const Ex2Help = <div>
+    Ex2 izi2
+</div>
 
 const view = () => 
 <div>
-        {h(InputBox1, ex1)}
-        {h(InputBox2, ex1)}
+        {h(Ex1Help_State, Ex1Help)}
+        {h(Ex2Help_State, Ex2Help)}
     <div className="highlight">
         Make a chessboard pattern.
     </div>

@@ -1,46 +1,31 @@
+import { h } from "hyperapp"
 
+// Thanks to https://gist.github.com/sergey-shpak/dffb81833fa060ec81d5830a9a039f82
 
- import { app, h } from "hyperapp"
-const Stateful = (Component, state?) => 
- Component.bind(state || Component.state)
-
-function onFocus(state){
-  this.focused = true
-  return { ...state }
-}
-
-function onBlur(state){
-  this.focused = false
+function onClick(state) {
+  this.hidden = !this.hidden
   return { ...state }
 }
 
 function Input(children){
   return [
-    h('input', {
-      onFocus: onFocus.bind(this),
-      onBlur: onBlur.bind(this)
-    }),
-    h('div', {}, `Focused ${this.focused}`),
-    h('div',
-    {
-      class: this.focused ? 'hidden' : ''
-    },
-      children
+    h(
+      'button', 
+      {
+        onClick: onClick.bind(this),
+      },
+        this.hidden ? '#' : '>'
+      ),
+    h(
+      'div',
+      {
+        class: this.hidden ? 'hidden' : ''
+      },
+        children
     )
   ]
 }
 
-// Exposing initial component state
-Input.state = { focused: false }
-
-// --- USAGE EXAMPLE --- 
-
-
-// export default (children) => {
-//   const InputBox1 = Stateful(Input)
-//   return h(InputBox1, children)
-// }
-
-export default () => Stateful(Input, {
-    focused: false
+export default () => Input.bind({
+    hidden: true
 })
