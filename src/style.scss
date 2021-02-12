@@ -28,7 +28,7 @@ $page-elems-margin: 25px;
 }
 
 .page-group {
-    width: $side-bar-width;
+    width: $side-bar-width + 10px;
 }
 
 .non-scrolling {
