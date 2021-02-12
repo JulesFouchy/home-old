@@ -31,6 +31,7 @@ const Ex1Solution_State = Hideable()
 const Ex1Solution_Name = "Solution"
 const Ex1Solution =
     <div>
+    <br/>
     {p5Code(`
 for (let i = 0; i < 8; ++i) {
     for (let j = 0; j < 8; ++j) {
@@ -58,20 +59,23 @@ const view = () =>
         Make a chessboard pattern.
     </div>
     <br/>
-    {h(Ex1Help_State, Ex1Help_Name, Ex1Help)}
-    <br/>
-    Bonus constraints :
-    <ul>
-        <li>Can you generalize to any number of grid cells ?</li>
-        <li>Can you do it in less than 10 lines of code ? Less than 5 ?</li>
+    <div className="indent">
+        {h(Ex1Help_State, Ex1Help_Name, Ex1Help)}
+        <br/>
+        {h(Ex1Solution_State, Ex1Solution_Name, Ex1Solution)}
+        <br/>
+        Bonus constraints :
         <ul>
-            <li>Avoid accumulative variables (compute everything based on the current loop indices instead of having global variables that change from one loop iteration to the next)</li>
-            <li>Use one loop instead of two</li>
+            <li>Can you generalize to any number of grid cells ?</li>
+            <li>Can you think of another tiling pattern ? Using three colors instead of two for example.</li>
+            <li>Can you do it in less than 10 lines of code ? Less than 5 ?</li>
+            <ul>
+                <li>Avoid accumulative variables (compute everything based on the current loop indices instead of having global variables that change from one loop iteration to the next)</li>
+                <li>Use one loop instead of two</li>
+            </ul>
         </ul>
-        <li>Can you think of another tiling pattern ? Using three colors instead of two for example.</li>
-    </ul>
-    <br />
-    {h(Ex1Solution_State, Ex1Solution_Name, Ex1Solution)}
+        <br />
+    </div>
 </div>
 
 app({
