@@ -11,23 +11,8 @@ import Hideable from '../../../../components/Hideable'
 LoadP5Widget()
 
 const Ex1Help_State = Hideable()
-const Ex1Help = <div>
-    Ex1 izi
-</div>
-
-const Ex2Help_State = Hideable()
-const Ex2Help = <div>
-    Ex2 izi2
-</div>
-
-const view = () => 
-<div>
-        {h(Ex1Help_State, Ex1Help)}
-        {h(Ex2Help_State, Ex2Help)}
-    <div className="highlight">
-        Make a chessboard pattern.
-    </div>
-    Help #1 : Split the problem in small steps
+const Ex1Help_Name = "Help : Split the problem in small steps"
+const Ex1Help =
     <ul>
         <li>Can you draw one line of 8 squares ? This might involve a loop. (NB : we will worry about the color later. For now just leave them as white with a black stroke)</li>
         <li>Move the code you just wrote into a {InlineCode("lineOfSquares")} function and make sure you still get the same visual result.</li>
@@ -41,6 +26,39 @@ const view = () =>
         </li>
         <li>And then, how do we decide which line starts with which color ? It is gonna be very similar to how we did alternating colors on a single line : either use the loop index or a global variable.</li>
     </ul>
+
+const Ex1Solution_State = Hideable()
+const Ex1Solution_Name = "Solution"
+const Ex1Solution =
+    <div>
+    {p5Code(`
+for (let i = 0; i < 8; ++i) {
+    for (let j = 0; j < 8; ++j) {
+        if ((i+j)%2 == 0)
+            fill("black")
+        else
+            fill("white")
+        rect(i * width / 8, j * height / 8, width/8, height/8)
+    }
+}
+`)}
+
+    {p5Code(`
+const N = 8
+for (let k = 0; k < N*N; ++k) {
+    fill((k + (N % 2 ? 0 : floor(k/N) % 2)) % 2 ? "white" : "black")
+    rect((k%N) * width / N, floor(k/N) * height / N, width/N, height/N)
+}
+`)}
+    </div>
+
+const view = () => 
+<div>
+    <div className="highlight">
+        Make a chessboard pattern.
+    </div>
+    <br/>
+    {h(Ex1Help_State, Ex1Help_Name, Ex1Help)}
     <br/>
     Bonus constraints :
     <ul>
@@ -52,26 +70,8 @@ const view = () =>
         </ul>
         <li>Can you think of another tiling pattern ? Using three colors instead of two for example.</li>
     </ul>
-    <br/>
-    {p5Code(`
-for (let i = 0; i < 8; ++i) {
-    for (let j = 0; j < 8; ++j) {
-     	if ((i+j)%2 == 0)
-            fill("black")
-      	else
-            fill("white")
-        rect(i * width / 8, j * height / 8, width/8, height/8)
-    }
-}
-    `)}
-
-{p5Code(`
-const N = 10
-for (let k = 0; k < N*N; ++k) {
-    fill((k + (N % 2 ? 0 : floor(k/N) % 2)) % 2 ? "black" : "white")
-    rect((k%N) * width / N, floor(k/N) * height / N, width/N, height/N)
-}
-    `)}
+    <br />
+    {h(Ex1Solution_State, Ex1Solution_Name, Ex1Solution)}
 </div>
 
 app({
