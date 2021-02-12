@@ -7,7 +7,7 @@ function onClick(state) {
   return { ...state }
 }
 
-function Input(children){
+function Input(name: string, children: any){
   return [
     h(
       'button', 
@@ -15,7 +15,12 @@ function Input(children){
         onClick: onClick.bind(this),
       },
         this.hidden ? '#' : '>'
-      ),
+    ),
+    h(
+      'span',
+      {},
+        name
+    ),
     h(
       'div',
       {
