@@ -6,6 +6,8 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0}),exports.GroupLink=exports.PageLink=exports.Link=void 0;var r=require("hyperapp"),t=e(require("../helper/RemoveProtocolFromURL")),o=function(e,o){return r.h("a",{href:e},o||t.default(e))};exports.Link=o;var n=function(e,r){return o(e.url,r||e.name)};exports.PageLink=n;var u=function(e){return o(e.pages[0].url,e.name)};exports.GroupLink=u;
 },{"hyperapp":"aft2","../helper/RemoveProtocolFromURL":"RDJ8"}],"y8r7":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e={url:"./p5-getting-started.html",name:"Getting Started"};exports.default=e;
+},{}],"yZig":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e={url:"./p5-typescript.html",name:"About Typescript"};exports.default=e;
 },{}],"ayG7":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e={url:"./p5-setup-and-draw.html",name:"Setup and Draw"};exports.default=e;
 },{}],"xFTc":[function(require,module,exports) {
@@ -17,8 +19,8 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"wNnP":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e={url:"./p5-inspirations.html",name:"Inspirations"};exports.default=e;
 },{}],"lBP6":[function(require,module,exports) {
-"use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=e(require("./getting-started/ref")),t=e(require("./setup-and-draw/ref")),u=e(require("./first-drawing/ref")),f=e(require("./useful-functions/ref")),i=e(require("./ex-loops/ref")),a=e(require("./inspirations/ref")),s={name:"Introduction to p5",pages:[r.default,t.default,u.default,f.default,i.default,a.default]};exports.default=s;
-},{"./getting-started/ref":"y8r7","./setup-and-draw/ref":"ayG7","./first-drawing/ref":"xFTc","./useful-functions/ref":"hEsK","./ex-loops/ref":"aoW2","./inspirations/ref":"wNnP"}],"pTfH":[function(require,module,exports) {
+"use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=e(require("./getting-started/ref")),t=e(require("./typescript/ref")),u=e(require("./setup-and-draw/ref")),f=e(require("./first-drawing/ref")),i=e(require("./useful-functions/ref")),a=e(require("./ex-loops/ref")),s=e(require("./inspirations/ref")),d={name:"Introduction to p5",pages:[r.default,t.default,u.default,f.default,i.default,a.default,s.default]};exports.default=d;
+},{"./getting-started/ref":"y8r7","./typescript/ref":"yZig","./setup-and-draw/ref":"ayG7","./first-drawing/ref":"xFTc","./useful-functions/ref":"hEsK","./ex-loops/ref":"aoW2","./inspirations/ref":"wNnP"}],"pTfH":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e={ref:{url:"./hexagons.html",name:"Hexagons Experiment"}};exports.default=e;
 },{}],"pLrw":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e={url:"./c3ga-complex-sphere.html",name:"Complex Sphere"};exports.default=e;
@@ -61,4 +63,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./fiche-recap/ref":"hVZD","./1-espaces-vectoriels/ref":"UMYH","./2-dimension/ref":"Ptjw","./3-matrices/ref":"yXvH","./4-determinant/ref":"JiQL","./5-diagonalisation/ref":"S6be"}],"FXnY":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var u=require("hyperapp"),r=require("../../components/Link"),i=e(require("../p5/class/group")),o=e(require("../hexagons/info")),t=e(require("../artworks/group")),n=e(require("../pedagogy/group")),s=e(require("../soutien-maths-s1/group")),a=e(require("../soutien-maths-s2/group")),p=function(){return u.h("div",{class:"main-layout"},["Hello Web",r.PageLink(o.default.ref),r.GroupLink(i.default),r.GroupLink(t.default),r.GroupLink(n.default),r.GroupLink(s.default),r.GroupLink(a.default),r.Link("https://julesfouchy.github.io/Resume","Resume")])};u.app({init:{},view:p,node:document.body});
 },{"hyperapp":"aft2","../../components/Link":"NZWM","../p5/class/group":"lBP6","../hexagons/info":"pTfH","../artworks/group":"IJ7g","../pedagogy/group":"fkN1","../soutien-maths-s1/group":"u1DU","../soutien-maths-s2/group":"szQW"}]},{},["FXnY"], null)
-//# sourceMappingURL=index.bc828ec3.js.map
+//# sourceMappingURL=index.14024a27.js.map
