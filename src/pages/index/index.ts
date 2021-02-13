@@ -23,6 +23,7 @@ const view = () =>
         GroupLink(group_soutienMathsS1),
         GroupLink(group_soutienMathsS2),
         Link('https://julesfouchy.github.io/Resume', 'Resume'),
+        Link('http://django-vjing.com/#/', 'Django : my VJing software'),
     ])
 
 app({
