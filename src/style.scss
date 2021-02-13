@@ -90,10 +90,6 @@ a {
     }
 }
 
-.line-jump {
-    margin: 15px;
-}
-
 .highlight {
     border: gray dashed 1px;
     background-color: $highlightColor;
@@ -110,10 +106,6 @@ button {
     background-color: $highlightColor;
     color: white;
     cursor: pointer;
-}
-
-.filename {
-    font-weight: bold;
 }
 
 .hidden {

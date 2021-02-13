@@ -1,7 +1,6 @@
-import { h, app } from 'hyperapp'
+import { app } from 'hyperapp'
 import info from './info'
 import PageView from '../../../../components/PageView'
-import Anecdote from '../../../../components/Anecdote'
 import { Link } from '../../../../components/Link'
 
 const view = () =>
