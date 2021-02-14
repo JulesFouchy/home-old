@@ -9,6 +9,8 @@ const view = () =>
         {Link("https://aiartists.org/generative-art-design", "Overview of Artworks and Styles")}
         <br/><br/>
         {Link("https://www.artnome.com/news/2018/8/8/why-love-generative-art", "More Artworks")}
+        <br/><br/>
+        {Link("https://www.youtube.com/watch?v=JvIRIUHJfp0&list=PLwS-3u8IfyNjmffhmWO6VD9Wakw_Q57Pz&index=1&t=54s", "Light & Interactive Installations")}
     <h2>Maths</h2>
         {Link("https://www.youtube.com/watch?v=fDSIRXmnVvk", "Chaos Equations - Code Parade")}
         <br/><br/>
