@@ -54,6 +54,22 @@ for (let k = 0; k < N*N; ++k) {
 const view = () => 
 <div>
     <div className="highlight">
+        Draw 100 rectangles. Lay them out as you want.
+    </div>
+    {/* {p5Code(`
+const colors = ['red', 'green', 'blue']
+noStroke()
+for (let i = 0; i < 100; i++) {
+    fill(random(colors), 150)
+    rect(random(width), random(height), random(100), random(100))
+}
+`)} */}
+    <br/>
+    <div className="highlight">
+        Draw 100 ellipses. Try to make sure there is more of them around the center of the canvas.
+    </div>
+    <br/>
+    <div className="highlight">
         Make a chessboard pattern.
     </div>
     <br/>
@@ -73,6 +89,10 @@ const view = () =>
             </ul>
         </ul>
         <br />
+    </div>
+
+    <div className="highlight">
+        Draw a rosace.
     </div>
 </div>
 
