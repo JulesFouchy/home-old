@@ -137,14 +137,14 @@ strokeWeight(1) // Back to default
     <br/><br/>
     {Exercises([
         {
-            title: "Draw Mickey Mouse's face",
-            demoLink: 'https://p5-class-jf.github.io/mickey-mouse/',
-            codeLink: 'https://github.com/p5-class-jf/mickey-mouse/blob/main/src/sketch.ts',
-        },
-        {
             title: "Draw a house",
             demoLink: 'https://p5-class-jf.github.io/house/',
             codeLink: 'https://github.com/p5-class-jf/house/blob/main/src/sketch.ts',
+        },
+        {
+            title: "Draw Mickey Mouse's face",
+            demoLink: 'https://p5-class-jf.github.io/mickey-mouse/',
+            codeLink: 'https://github.com/p5-class-jf/mickey-mouse/blob/main/src/sketch.ts',
         },
         {
             title: "Draw a face",
