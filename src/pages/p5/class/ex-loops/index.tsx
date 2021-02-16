@@ -5,6 +5,7 @@ import InlineCode from '../../../../components/InlineCode'
 import p5Code from '../../../../components/p5Code'
 import LoadP5Widget from '../../../../helper/LoadP5Widget'
 import Hideable from '../../../../components/Hideable'
+import { Link } from '../../../../components/Link'
 
 LoadP5Widget()
 
@@ -65,10 +66,34 @@ for (let i = 0; i < 100; i++) {
 }
 `)} */}
     <br/>
+    <div className="indent">
+        {Link('https://p5-class-jf.github.io/100-rectangles-v1/', 'Example result')}
+        <br/>
+        {Link('https://github.com/p5-class-jf/100-rectangles-v1/blob/main/src/sketch.ts', 'Example solution')}
+        <br/><br/>
+        Bonus constraints :
+        <ul>
+            <li>Play with the alpha value (transparency) to make it more interesting when rectangles overlap.
+                <br/>
+                {Link('https://p5-class-jf.github.io/100-rectangles-v2/', 'Example result')}
+                <br/>
+                {Link('https://github.com/p5-class-jf/100-rectangles-v2/blob/main/src/sketch.ts', 'Example solution')}
+                <br/>
+            </li>
+        </ul>
+        <br />
+    </div>
     <div className="highlight">
         Draw 100 ellipses. Try to make sure there is more of them around the center of the canvas.
     </div>
     <br/>
+    <div className="indent">
+        Bonus constraints :
+        <ul>
+            <li>Play with the {Link('https://p5js.org/reference/#/p5/blendMode', 'Blend Mode')} to make it more interesting when ellipses overlap.</li>
+        </ul>
+        <br />
+    </div>
     <div className="highlight">
         Make a chessboard pattern.
     </div>
