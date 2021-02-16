@@ -2,6 +2,7 @@ import { h, app } from 'hyperapp'
 import { PageLink, GroupLink, Link } from '../../components/Link'
 //
 import group_p5Intro from '../p5/class/group'
+import group_aeAI from '../ae-ai/group'
 import page_hexagons from '../hexagons/info'
 import group_artworks from '../artworks/group'
 import group_pedagogy from '../pedagogy/group'
@@ -18,6 +19,7 @@ const view = () =>
         'Hello Web',
         PageLink(page_hexagons.ref),
         GroupLink(group_p5Intro),
+        GroupLink(group_aeAI),
         GroupLink(group_artworks),
         GroupLink(group_pedagogy),
         GroupLink(group_soutienMathsS1),
