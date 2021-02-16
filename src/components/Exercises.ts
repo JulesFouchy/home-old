@@ -24,7 +24,7 @@ export default (exercises: exProps[]) => {
                             h('div', {class: 'indent'}, [
                                 exercise.demoLink && Link(exercise.demoLink, 'Example result'),
                                 h('br'),
-                                exercise.codeLink && Link(exercise.codeLink, 'Solution'),
+                                exercise.codeLink && Link(exercise.codeLink, 'Example solution'),
                             ])
                         ]
                     ),
