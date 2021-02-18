@@ -14,6 +14,8 @@ const view = () =>
     <h2>Maths</h2>
         {Link("https://www.youtube.com/watch?v=fDSIRXmnVvk", "Chaos Equations - Code Parade")}
         <br/><br/>
+        {Link("https://www.mathchaospatterns.com", "Math Chaos Patterns - Dmitry Belov")}
+        <br/><br/>
         {Link("https://www.youtube.com/watch?v=8--5LwHRhjk", "Modeling with SDFs - Inigo Quilez")}
         <br/><br/>
         {Link("https://www.openprocessing.org/sketch/1057083", "Interference Patterns")}
