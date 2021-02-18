@@ -88,6 +88,10 @@ for (let i = 0; i < 100; i++) {
     </div>
     <br/>
     <div className="indent">
+        {Link('https://p5-class-jf.github.io/100-ellipses/', 'Example result')}
+        <br/>
+        {Link('https://github.com/p5-class-jf/100-ellipses/blob/main/src/sketch.ts', 'Example solution')}
+        <br/><br/>
         Bonus constraints :
         <ul>
             <li>Play with the {Link('https://p5js.org/reference/#/p5/blendMode', 'Blend Mode')} to make it more interesting when ellipses overlap.</li>
@@ -118,6 +122,22 @@ for (let i = 0; i < 100; i++) {
 
     <div className="highlight">
         Draw a rosace.
+    </div>
+    <br/>
+    <div className="indent">
+        {Link('https://p5-class-jf.github.io/rosace/', 'Example result')}
+        <br/>
+        {Link('https://github.com/p5-class-jf/rosace/blob/main/src/sketch.ts', 'Example solution')}
+        <br/><br/>
+        Bonus constraints :
+        <ul>
+            <li>How to colorize the rosace ? <br/>
+            {Link('https://julesfouchy.github.io/p5_Rosace_Generator/', 'Example result')}
+            <br/>
+            {Link('https://github.com/JulesFouchy/p5_Rosace_Generator/blob/main/sketch/sketch.ts', 'Example solution')} and its {Link('https://github.com/JulesFouchy/p5_Rosace_Generator/blob/main/shader/myShader.frag', 'shader')}.
+            <br/><br/>
+            </li>
+        </ul>
     </div>
 </div>
 
