@@ -41,6 +41,27 @@ const view = () =>
         </ul>
         <br />
     </div>
+
+    <div className="highlight">
+        Draw a rosace.
+    </div>
+    <br/>
+    <div className="indent">
+        {Link('https://p5-class-jf.github.io/rosace/', 'Example result')}
+        <br/>
+        {Link('https://github.com/p5-class-jf/rosace/blob/main/src/sketch.ts', 'Example solution')}
+        <br/><br/>
+        Bonus constraints :
+        <ul>
+            <li>How to colorize the rosace ? <br/>
+            {Link('https://julesfouchy.github.io/p5_Rosace_Generator/', 'Example result')}
+            <br/>
+            {Link('https://github.com/JulesFouchy/p5_Rosace_Generator/blob/main/sketch/sketch.ts', 'Example solution')} and its {Link('https://github.com/JulesFouchy/p5_Rosace_Generator/blob/main/shader/myShader.frag', 'shader')}.
+            <br/><br/>
+            </li>
+        </ul>
+    </div>
+
     <div className="highlight">
         Make a chessboard pattern.
     </div>
@@ -61,26 +82,6 @@ const view = () =>
             </ul>
         </ul>
         <br />
-    </div>
-
-    <div className="highlight">
-        Draw a rosace.
-    </div>
-    <br/>
-    <div className="indent">
-        {Link('https://p5-class-jf.github.io/rosace/', 'Example result')}
-        <br/>
-        {Link('https://github.com/p5-class-jf/rosace/blob/main/src/sketch.ts', 'Example solution')}
-        <br/><br/>
-        Bonus constraints :
-        <ul>
-            <li>How to colorize the rosace ? <br/>
-            {Link('https://julesfouchy.github.io/p5_Rosace_Generator/', 'Example result')}
-            <br/>
-            {Link('https://github.com/JulesFouchy/p5_Rosace_Generator/blob/main/sketch/sketch.ts', 'Example solution')} and its {Link('https://github.com/JulesFouchy/p5_Rosace_Generator/blob/main/shader/myShader.frag', 'shader')}.
-            <br/><br/>
-            </li>
-        </ul>
     </div>
 </div>
 
