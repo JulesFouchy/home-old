@@ -27,7 +27,7 @@ const view = () =>
         <br />
     </div>
     <div className="highlight">
-        Draw 100 ellipses. Try to make sure there is more of them around the center of the canvas.
+        Draw 100 ellipses. Try to have more of them near the center of the canvas.
     </div>
     <br/>
     <div className="indent">
@@ -79,6 +79,9 @@ const view = () =>
             <ul>
                 <li>Avoid accumulative variables (compute everything based on the current loop indices instead of having global variables that change from one loop iteration to the next)</li>
                 <li>Use one loop instead of two</li>
+                {Link('https://github.com/p5-class-jf/chessboard-10-lines/blob/main/src/sketch.ts', 'Solution in 10 lines')}
+                <br/>
+                {Link('https://github.com/p5-class-jf/chessboard-5-lines/blob/main/src/sketch.ts', 'Solution in 5 lines')}
             </ul>
         </ul>
         <br />
