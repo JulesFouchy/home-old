@@ -16,7 +16,7 @@ const view = () =>
         <br/><br/>
         Bonus constraints :
         <ul>
-            <li>Play with the alpha value (transparency) to make it more interesting when rectangles overlap.
+            <li>Play with the alpha value (transparency) or with the {Link('https://p5js.org/reference/#/p5/blendMode', 'Blend Mode')} to make it more interesting when rectangles overlap.
                 <br/>
                 {Link('https://p5-class-jf.github.io/100-rectangles-v2/', 'Example result')}
                 <br/>
@@ -37,7 +37,7 @@ const view = () =>
         <br/><br/>
         Bonus constraints :
         <ul>
-            <li>Play with the {Link('https://p5js.org/reference/#/p5/blendMode', 'Blend Mode')} to make it more interesting when ellipses overlap.</li>
+            <li>Find several ways of having them concentrated near the center. I can think of at least 3 different ways of achieving this result.</li>
         </ul>
         <br />
     </div>
