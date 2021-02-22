@@ -92,9 +92,9 @@ const view = () =>
 </div>
 <br/>
 <div className="indent">
-    {/* {Link('https://p5-class-jf.github.io/chessboard/', 'Example result')}
+    {Link('https://p5-class-jf.github.io/distorted-circle/', 'Example result')}
     <br/>
-    {Link('https://www.openprocessing.org/sketch/1107037', 'Step-by-step help and solution')} */}
+    {Link('https://github.com/p5-class-jf/distorted-circle/blob/main/src/sketch.ts', 'Example solution')}
     <br/><br/>
     Bonus constraints :
     <ul>
