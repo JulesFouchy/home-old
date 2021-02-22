@@ -62,29 +62,49 @@ const view = () =>
         </ul>
     </div>
 
-    <div className="highlight">
-        Make a chessboard pattern.
-    </div>
+<div className="highlight">
+    Make a chessboard pattern.
+</div>
+<br/>
+<div className="indent">
+    {Link('https://p5-class-jf.github.io/chessboard/', 'Example result')}
     <br/>
-    <div className="indent">
-        {Link('https://p5-class-jf.github.io/chessboard/', 'Example result')}
-        <br/>
-        {Link('https://www.openprocessing.org/sketch/1107037', 'Step-by-step help and solution')}
-        <br/><br/>
-        Bonus constraints :
+    {Link('https://www.openprocessing.org/sketch/1107037', 'Step-by-step help and solution')}
+    <br/><br/>
+    Bonus constraints :
+    <ul>
+        <li>Can you generalize to any number of grid cells ?</li>
+        <li>Can you think of another tiling pattern ? Using three colors instead of two for example.</li>
+        <li>Can you do it in less than 10 lines of code ? Less than 5 ?</li>
         <ul>
-            <li>Can you generalize to any number of grid cells ?</li>
-            <li>Can you think of another tiling pattern ? Using three colors instead of two for example.</li>
-            <li>Can you do it in less than 10 lines of code ? Less than 5 ?</li>
-            <ul>
-                <li>Avoid accumulative variables (compute everything based on the current loop indices instead of having global variables that change from one loop iteration to the next)</li>
-                <li>Use one loop instead of two</li>
-                {Link('https://github.com/p5-class-jf/chessboard-10-lines/blob/main/src/sketch.ts', 'Solution in 10 lines')}
-                <br/>
-                {Link('https://github.com/p5-class-jf/chessboard-5-lines/blob/main/src/sketch.ts', 'Solution in 5 lines')}
-            </ul>
+            <li>Avoid accumulative variables (compute everything based on the current loop indices instead of having global variables that change from one loop iteration to the next)</li>
+            <li>Use one loop instead of two</li>
+            {Link('https://github.com/p5-class-jf/chessboard-10-lines/blob/main/src/sketch.ts', 'Solution in 10 lines')}
+            <br/>
+            {Link('https://github.com/p5-class-jf/chessboard-5-lines/blob/main/src/sketch.ts', 'Solution in 5 lines')}
         </ul>
-        <br />
+    </ul>
+    <br />
+</div>
+
+<div className="highlight">
+    Draw a circle, but do it by placing each vertex "by hand" using the concept of {Link('https://p5js.org/reference/#/p5/beginShape', 'shape')}.
+</div>
+<br/>
+<div className="indent">
+    {/* {Link('https://p5-class-jf.github.io/chessboard/', 'Example result')}
+    <br/>
+    {Link('https://www.openprocessing.org/sketch/1107037', 'Step-by-step help and solution')} */}
+    <br/><br/>
+    Bonus constraints :
+    <ul>
+        <li>Now that you drew the circle yourself, you have more control and you can alter it !</li>
+        <ul>
+            <li>Add a small random offset to each vertex to create a distorted circle</li>
+            <li>Add an offset based on the angle of the current vertex to make continuous effects</li>
+        </ul>
+    </ul>
+    <br />
     </div>
 </div>
 
