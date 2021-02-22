@@ -100,8 +100,11 @@ const view = () =>
     <ul>
         <li>Now that you drew the circle yourself, you have more control and you can alter it !</li>
         <ul>
-            <li>Add a small random offset to each vertex to create a distorted circle</li>
-            <li>Add an offset based on the angle of the current vertex to make continuous effects</li>
+            <li>Add a small random offset to each vertex to create a distorted circle [See Method 0 of the example]</li>
+            <li>Add an offset based on the angle of the current vertex to make continuous effects [See Methods 1 and 2 of the example]</li>
+            {Link('https://p5-class-jf.github.io/distorted-circle-v2/', 'Example results')}
+            <br/>
+            {Link('https://github.com/p5-class-jf/distorted-circle-v2/blob/main/src/sketch.ts', 'Example solution')}
         </ul>
     </ul>
     <br />
