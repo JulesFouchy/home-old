@@ -14,6 +14,8 @@ const view = () =>
         <br/><br/>
         {Link("https://www.youtube.com/watch?v=_7wKjTf_RlI", "Music Video - Max Cooper, Order From Chaos (video by Maxime Causeret)")}
         <br/><br/>
+        {Link("https://www.youtube.com/watch?v=4Se0_w0ISYk", "Tim Holman - Generative Art Speedrun - An overview of generative art techniques in 20 minutes")}
+        <br/><br/>
         {Link("https://tylerxhobbs.com/essays/2020/how-to-hack-a-painting", "Tyler Hobbs - Watercolor effect")}
     <h2>Maths</h2>
         {Link("https://www.youtube.com/watch?v=fDSIRXmnVvk", "Chaos Equations - Code Parade")}
