@@ -13,6 +13,8 @@ const view = () =>
         {Link("https://www.youtube.com/watch?v=JvIRIUHJfp0&list=PLwS-3u8IfyNjmffhmWO6VD9Wakw_Q57Pz&index=1&t=54s", "Light & Interactive Installations")}
         <br/><br/>
         {Link("https://www.youtube.com/watch?v=_7wKjTf_RlI", "Music Video - Max Cooper, Order From Chaos (video by Maxime Causeret)")}
+        <br/><br/>
+        {Link("https://tylerxhobbs.com/essays/2020/how-to-hack-a-painting", "Tyler Hobbs - Watercolor effect")}
     <h2>Maths</h2>
         {Link("https://www.youtube.com/watch?v=fDSIRXmnVvk", "Chaos Equations - Code Parade")}
         <br/><br/>
