@@ -1,12 +1,13 @@
 import { PageGroup } from '../../../types/PageGroup'
 
 import chapter0 from './getting-started/ref'
-import chapter1 from './typescript/ref'
-import chapter2 from './setup-and-draw/ref'
-import chapter3 from './first-drawing/ref'
-import chapter4 from './useful-functions/ref'
-import chapter5 from './ex-loops/ref'
-import chapter6 from './inspirations/ref'
+import chapter1 from './about-git/ref'
+import chapter2 from './typescript/ref'
+import chapter3 from './setup-and-draw/ref'
+import chapter4 from './first-drawing/ref'
+import chapter5 from './useful-functions/ref'
+import chapter6 from './ex-loops/ref'
+import chapter7 from './inspirations/ref'
 
 const group: PageGroup = {
     name: 'Introduction to p5',
@@ -18,6 +19,7 @@ const group: PageGroup = {
         chapter4,
         chapter5,
         chapter6,
+        chapter7,
     ]
 }
 
