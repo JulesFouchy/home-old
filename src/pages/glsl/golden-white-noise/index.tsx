@@ -47,10 +47,22 @@ A live demo of the different types of white noise in action : {Link("https://www
 <br/><br/>
 
 And here is a comparison of the visual results. Gold noise produces the same (artifact-free) results on all the GPUs I could test with.
-<img src={golden_potato}></img>
-<img src={golden_good}></img>
-<img src={classic_potato}></img>
-<img src={classic_good}></img>
+<div class="grid-container">
+  <div class="grid-item"></div>
+  <div class="grid-item">Classic white noise</div>
+  <div class="grid-item">Gold Noise</div>
+  <div class="grid-item">Potato GPU</div>
+  <div class="grid-item"><img src={classic_potato}></img></div>
+  <div class="grid-item"><img src={golden_potato}></img></div>
+  <div class="grid-item">Good GPU</div>
+  <div class="grid-item"><img src={classic_good}></img></div>
+  <div class="grid-item"><img src={golden_good}></img></div>
+</div> 
+
+
+
+
+
 </div>
 
 app({
