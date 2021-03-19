@@ -19,7 +19,7 @@ Every person interested in rendering through fragment shaders has already come a
 `)}
 <br/>
 And I used it too, until someone pointed out a big problem to me : on her device my artworks were all messed up ! And it turned
-out that many people were actually encountering the same problem.
+out that many people were actually encountering the same problem. (You can see the artifacts in the comparison at the end)
 <br/><br/>
 After a bit of investigation I tracked it down to the {InlineCode("random")} function that was not producing reliable results !
 It turned out that, depending on the precision of floats supported by your GPU, the results were different. For low precision floats the quality of the distribution gets noticeably degraded.
@@ -44,7 +44,7 @@ The corresponding StackOverflow discussion : {Link("https://stackoverflow.com/qu
 A live comparison of the different types of white noise : {Link("https://www.shadertoy.com/view/fsf3DN")}
 <br/><br/>
 
-And here is a comparison of the visual results. Gold noise produces the same (artifact-free) results on all the GPUs I could test with :
+And here is a comparison of the visual results. Gold Noise produces the same (artifact-free) results on all the GPUs I could test with :
 <div class="grid-container">
   <div class="grid-item"></div>
   <div class="grid-item">Classic white noise</div>
