@@ -84,10 +84,16 @@ a {
 
 .code {
     font-family: Courier, sans-serif;
-    font-size: 1.1 * $base-font-size;
     &.inline {
-        // font-style: italic;
+        font-size: 1.1 * $base-font-size;
     }
+}
+
+.code-block {
+    overflow: auto;
+    text-align: left;
+    vertical-align: text-top;
+	white-space: pre;
 }
 
 .highlight {
