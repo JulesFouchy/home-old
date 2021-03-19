@@ -4,8 +4,7 @@ import PageView from '../../../../components/PageView'
 import InlineCode from '../../../../components/InlineCode'
 import { Link } from '../../../../components/Link'
 import Exercises from '../../../../components/Exercises'
-import p5Code from '../../../../components/p5Code'
-import LoadP5Widget from '../../../../helper/LoadP5Widget'
+import {p5Code, LoadP5Widget} from '../../../../components/p5Code'
 
 LoadP5Widget()
 

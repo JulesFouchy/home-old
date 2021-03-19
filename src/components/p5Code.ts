@@ -1,7 +1,14 @@
 import { h } from 'hyperapp'
 
-// Don't forget to add <script src="https://julesfouchy.github.io/p5.js-widget/p5-widget.js"></script> in the pages using this component
-export default (code: string) => {
+const LoadP5Widget = () => setTimeout(() => {
+    const head_ID = document.getElementsByTagName("head")[0]
+    const script_element = document.createElement('script')
+    script_element.type = 'text/javascript'
+    script_element.src = 'https://julesfouchy.github.io/p5.js-widget/p5-widget.js'
+    head_ID.appendChild(script_element);
+}, 1000)
+
+const p5Code = (code: string) => {
     return h(
         'script',
         {
@@ -10,3 +17,5 @@ export default (code: string) => {
             code
     )
 }
+
+export {p5Code, LoadP5Widget}
