@@ -35,7 +35,7 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"IJ7g":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=e(require("./c3ga-complex-sphere/ref")),t=e(require("./3D-ui/ref")),u={name:"Artworks",pages:[r.default,t.default]};exports.default=u;
 },{"./c3ga-complex-sphere/ref":"pLrw","./3D-ui/ref":"GkIg"}],"QPMo":[function(require,module,exports) {
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e={url:"./golden-white-noise.html",name:"Golden white noise"};exports.default=e;
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e={url:"./golden-white-noise.html",name:"Gold Noise"};exports.default=e;
 },{}],"nT6p":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var t=e(require("./golden-white-noise/ref")),r={name:"glsl",pages:[t.default]};exports.default=r;
 },{"./golden-white-noise/ref":"QPMo"}],"JXUD":[function(require,module,exports) {
@@ -75,4 +75,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./fiche-recap/ref":"hVZD","./1-espaces-vectoriels/ref":"UMYH","./2-dimension/ref":"Ptjw","./3-matrices/ref":"yXvH","./4-determinant/ref":"JiQL","./5-diagonalisation/ref":"S6be"}],"FXnY":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var u=require("hyperapp"),r=require("../../components/Link"),i=e(require("../p5/class/group")),o=e(require("../ae-ai/group")),t=e(require("../hexagons/info")),n=e(require("../artworks/group")),a=e(require("../glsl/group")),p=e(require("../pedagogy/group")),s=e(require("../soutien-maths-s1/group")),l=e(require("../soutien-maths-s2/group")),d=function(){return u.h("div",{class:"main-layout"},["Hello Web",r.PageLink(t.default.ref),r.GroupLink(i.default),r.GroupLink(o.default),r.GroupLink(n.default),r.GroupLink(a.default),r.GroupLink(p.default),r.GroupLink(s.default),r.GroupLink(l.default),r.Link("https://julesfouchy.github.io/Resume","Resume"),r.Link("http://django-vjing.com/#/","Django : my VJing software")])};u.app({init:{},view:d,node:document.body});
 },{"hyperapp":"aft2","../../components/Link":"NZWM","../p5/class/group":"lBP6","../ae-ai/group":"yNpw","../hexagons/info":"pTfH","../artworks/group":"IJ7g","../glsl/group":"nT6p","../pedagogy/group":"fkN1","../soutien-maths-s1/group":"u1DU","../soutien-maths-s2/group":"szQW"}]},{},["FXnY"], null)
-//# sourceMappingURL=index.ca949958.js.map
+//# sourceMappingURL=index.90035c5f.js.map
