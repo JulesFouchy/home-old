@@ -39,6 +39,10 @@ float gold_noise(in vec2 xy, in float seed){
 }
 `)}
 <br/>
+<div className="highlight">
+Alternatively, you can rely on {Link("https://github.com/ashima/webgl-noise")} for your Perlin / simplex / fractal / etc. noise functions since they don't make use of these pseudorandom number generators.
+</div>
+<br/>
 The corresponding StackOverflow discussion : {Link("https://stackoverflow.com/questions/4200224/random-noise-functions-for-glsl")}
 <br/><br/>
 A live comparison of the different types of white noise : {Link("https://www.shadertoy.com/view/fsf3DN")}
