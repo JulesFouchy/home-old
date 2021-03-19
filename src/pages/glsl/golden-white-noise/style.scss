@@ -1,9 +1,17 @@
 .grid-container {
       display: grid;
-      grid-template-columns: 33% 33% 33%;
-      // grid-template-rows: 25% 100px auto;
+      grid-template-columns: 10% 45% 45%;
+}
+
+.grid-item {
+      background-color: rgb(66, 66, 66);
+      border: rgb(194, 194, 194) solid 2px;
+      text-align: center;
 }
 
 img {
-      width: 250px;
+      width: 95%;
+      height: 95%;
+      position: relative;
+      top: 2.5%;
 }

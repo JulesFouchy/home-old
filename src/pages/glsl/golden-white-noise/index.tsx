@@ -46,7 +46,7 @@ The StackOverflow discussion : {Link("https://stackoverflow.com/questions/420022
 A live demo of the different types of white noise in action : {Link("https://www.shadertoy.com/view/fsf3DN")}
 <br/><br/>
 
-And here is a comparison of the visual results. Gold noise produces the same (artifact-free) results on all the GPUs I could test with.
+And here is a comparison of the visual results. Gold noise produces the same (artifact-free) results on all the GPUs I could test with :
 <div class="grid-container">
   <div class="grid-item"></div>
   <div class="grid-item">Classic white noise</div>
