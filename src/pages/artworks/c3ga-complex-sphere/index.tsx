@@ -8,7 +8,7 @@ const view = () =>
 <div>
 <iframe width="962" height="541" src="https://www.youtube.com/embed/mCS6Ye1YN5Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
-<i>A single fragment shader ({Link("https://pastebin.com/aewwkHs5", "available here")}), rendered using {Link("https://github.com/IMAC-projects/is0", "is0")}</i>
+<i>A single fragment shader ({Link("https://pastebin.com/29tUCsef", "available here")}), rendered using {Link("https://github.com/IMAC-projects/is0", "is0")}</i>
 <br/><br/>
 What you see here is a simple sphere, plus two rendering tricks.
 <br/><br/>
