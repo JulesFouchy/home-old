@@ -17,7 +17,6 @@ const view = () =>
         class: 'main-layout',
     }, 
     [
-        'Hello Web',
         PageLink(page_hexagons.ref),
         GroupLink(group_p5Intro),
         GroupLink(group_aeAI),
@@ -28,6 +27,7 @@ const view = () =>
         GroupLink(group_soutienMathsS2),
         Link('https://julesfouchy.github.io/Resume', 'Resume'),
         Link('http://django-vjing.com/#/', 'Django : my VJing software'),
+        Link('https://youtu.be/ks2TZxxF9tc', '?'),
     ])
 
 app({
